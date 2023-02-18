@@ -1,0 +1,89 @@
+.chat__bot {
+  position: fixed;
+  z-index: 999999;
+}
+
+.rsc-header-title {
+  padding-left: 1rem;
+  font-size: 1.2rem !important;
+  color: rgb(250, 245, 245);
+}
+
+/* floating btn position */
+.rsc-float-button {
+  bottom: 76px !important;
+}
+
+.rsc-container {
+  right: 42px !important;
+  bottom: 85px !important;
+}
+
+.rsc-os-options {
+  text-align: right !important;
+}
+
+.rsc-os-option {
+  transition: 1.5s;
+  animation: floating 1.5s ease-in-out !important;
+  animation-fill-mode: forwards !important;
+  animation-iteration-count: infinite !important;
+}
+
+.rsc-os-option-element {
+  color: #ffffff !important;
+  background: #faaf3b !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  /* box-shadow: 0px 3px 2px 0 rgb(0 0 0 / 15%) !important; */
+  border: 0.5px solid #faaf3b !important;
+}
+
+.rsc-submit-button {
+  padding: 14px 16px 19px 18px !important;
+}
+
+.rsc-ts-bubble {
+  font-size: 17px !important;
+  font-weight: 600;
+  font-family: "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+/* .rsc-header-title::before {
+  
+  background-image: url("./chatbotman.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  content: "";
+} */
+
+/*boticon*/
+/* .cftzIa {
+  height: 82px !important;
+} */
+
+/* usericon */
+/* .cXLLpN {
+  height: 52px !important;
+} */
+
+/* .rsc-os {
+  padding-left: 44px !important;
+} */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

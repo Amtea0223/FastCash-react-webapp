@@ -1,0 +1,36 @@
+/* LoanService Section 2  */
+
+.loanSerSection2 {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.loanSerBox {
+  width: 400px;
+  margin: 20px;
+}
+
+.loanSerSection2-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.loanSer-image {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 975px) {
+  .sorting-wrap {
+    flex-wrap: wrap;
+  }
+  .sorting-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}

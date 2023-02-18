@@ -1,0 +1,52 @@
+.loanServices-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loanServices-content-container {
+  display: flex;
+  margin: 50px;
+  width: 80%;
+  justify-content: center;
+}
+
+.loanServices-content-title {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  color: #c39b6e;
+  font-weight: bold;
+  line-height: 2em;
+  margin-bottom: 0;
+}
+
+.loanServices-content-desc {
+  width: 50%;
+  font-size: larger;
+  font-weight: 600;
+  margin: 50px;
+  margin-top: 0;
+}
+
+.loanServices-content-pic {
+  min-width: 350px;
+  max-width: 600px;
+}
+
+.loanServices-content-pic img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .loanServices-content-container {
+    flex-wrap: wrap;
+  }
+  .loanServices-content-desc {
+    width: 100%;
+    margin: 10px;
+  }
+  .loanServices-content-title {
+    margin-top: 20px;
+  }
+}

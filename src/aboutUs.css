@@ -1,0 +1,116 @@
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUs-container {
+  display: flex;
+}
+
+.aboutUs-left {
+  width: 60%;
+  height: 80vh;
+  background-image: url("./images/aboutus/aboutus_bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutus-appybtn {
+  margin-top: 100px;
+  margin-left: 10vw;
+}
+
+.aboutUs-bg {
+  width: 100%;
+  height: fit-content;
+}
+
+.page-title-box {
+  background-color: #00000059;
+  width: 300px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.page-title-box span {
+  color: #f0b764;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  text-indent: 3px;
+}
+
+.aboutus-btn-apply {
+  background-color: #212529;
+  width: 180px;
+  height: 6vh;
+  color: #f0b764;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.aboutus-btn-apply:hover {
+  color: white;
+}
+
+/* right side */
+.aboutUs-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vw;
+  font-size: larger;
+}
+
+.aboutUs-title {
+  font-size: 28px;
+  color: #c39b6e;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.golden-bottom {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to right, #f0d397, #94815b);
+}
+
+@media only screen and (max-width: 975px) {
+  .aboutUs-container {
+    flex-direction: column;
+  }
+  .aboutUs-left {
+    width: 100%;
+  }
+  .aboutUs-right {
+    width: 100%;
+    padding: 2rem;
+  }
+  .aboutUs-banner-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .page-title-box {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .aboutus-appybtn {
+    display: none;
+  }
+  .aboutUs-left {
+    height: 20vh;
+  }
+  .aboutUs-left .top-space {
+    height: 10px;
+  }
+}

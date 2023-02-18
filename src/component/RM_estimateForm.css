@@ -1,0 +1,49 @@
+.estimForm {
+  width: 37%;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 200px 400px;
+  grid-template-areas:
+    "desc rule"
+    "detail detail";
+}
+
+.estimForm1 {
+  grid-area: desc;
+}
+.estimForm2 {
+  grid-area: rule;
+}
+.estimForm3 {
+  grid-area: detail;
+}
+
+.estimForm3 fieldset {
+  box-shadow: 2px 4px 6px 1px #afafaf;
+}
+
+.estimForm4 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* tablet */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .estimForm {
+    width: unset;
+  }
+  .estim-submitbtn {
+    align-self: center;
+  }
+}
+
+/*************mobile start ***************/
+
+.estimForm1-mob {
+  text-align: center;
+}
+
+.estimForm3-mob {
+  text-align: center;
+  text-align: -webkit-center;
+}

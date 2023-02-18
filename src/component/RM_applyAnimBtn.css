@@ -1,0 +1,25 @@
+.applyAnimBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  animation: scale 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.applyAnimBtn img {
+  width: 10vw;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+  40% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

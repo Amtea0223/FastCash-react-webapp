@@ -1,0 +1,21 @@
+.applyAnimBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+
+}
+
+.applyAnimBtn img {
+  width: 10vw;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+  40% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

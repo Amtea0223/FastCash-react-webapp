@@ -1,0 +1,22 @@
+.floatBtnList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+
+  position: fixed;
+  z-index: 99999;
+  right: 36px;
+  bottom: 132px;
+  align-items: center;
+}
+
+.floatBtnList-item {
+  width: fit-content;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+
+.floatBtnList-item:hover {
+  transform: scale(1.1);
+}

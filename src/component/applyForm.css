@@ -1,0 +1,129 @@
+.applyForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  z-index: 99999999;
+}
+
+.applyForm-triangle {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.applyForm-step-circle {
+  height: 500px;
+}
+
+.applyForm-step-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.applyForm-step-left {
+  display: flex;
+}
+
+.applyForm-step-title {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+.applyForm-step-title p {
+  margin-bottom: 91px;
+}
+.applyForm-step-title p:nth-child(5) {
+  margin-bottom: 0px;
+}
+
+/****step choice ****/
+.step-choice {
+  width: 300px;
+  height: 75px;
+  border-radius: 24px;
+  background-color: #707070;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.step-choice-text {
+  align-self: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.step-choice span {
+  font-size: 21px;
+  color: white;
+}
+
+.step-choice img {
+  width: 42px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+.test {
+  background-color: #707070;
+}
+
+.step-content {
+  width: 400px;
+  margin-left: 50px;
+  transition: 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+.applyForm-stepBtn button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.step-finishApply {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.step-finishApply img {
+  width: 150px;
+}
+
+.step-finishApply {
+  text-align: center;
+}
+
+.step-content-choice {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33vw;
+  justify-content: space-between;
+}
+
+/*****step 3 start******/
+
+@media only screen and (max-width: 900px) {
+  .applyForm {
+    text-align: center;
+  }
+  .step-content {
+    width: unset;
+    margin-left: 0px;
+  }
+
+  .step-content-choice {
+    width: unset;
+    justify-content: center;
+  }
+  .applyForm-step-left {
+    display: none;
+  }
+  .applyForm-stepBtn button {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+.phoneBtn-container {
+  z-index: 99;
+  width: 49px;
+  height: 49px;
+  background: linear-gradient(0.25turn,  #fff0ca, #e7c062);
+  display: flex;
+
+  border-radius: 50%;  
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.phoneIcon {
+  width: 35px;
+  height: auto;
+}

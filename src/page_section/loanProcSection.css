@@ -1,0 +1,294 @@
+.loan-process-section {
+  width: 100%;
+}
+
+.section-sapce {
+  height: 10vh;
+}
+
+/* Section1 */
+.loan-process-section1 {
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-process-head-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 500px;
+  margin-left: 30px;
+}
+
+.loan-process-head-vl {
+  margin-right: 30px;
+  border-left: 5px solid #d99c39;
+  height: 400px;
+}
+
+.loan-process-head-title-block {
+  margin-bottom: 10px;
+}
+
+.loan-process-head-title {
+  background-color: #d99c39;
+  color: white;
+  font-size: 80px;
+  padding: 2px;
+  letter-spacing: 35px;
+  margin-bottom: 15px;
+}
+
+.loan-apply-btn {
+  display: inline-block;
+  background: #d99c39;
+  color: #fff;
+  border: none;
+  padding: 2px 35px;
+  margin: 30px;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  letter-spacing: 10px;
+  font-size: 40px;
+}
+
+.loan-process-head-btn {
+  margin-top: 340px;
+  margin-left: 600px;
+}
+
+/* Section2 */
+.loan-process-section2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/loanProcess/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.loan-process-section2-left {
+  width: 50vw;
+  z-index: 1;
+}
+
+.loan-process-section2-handphone {
+  position: absolute;
+  height: 100vh;
+}
+.loan-process-section2-right {
+  min-width: 500px;
+  z-index: 2;
+  align-self: center;
+}
+
+.loan-process-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loan-process-steps-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.loan-process-step-num {
+  font-size: 7rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: #cead88;
+}
+
+.loan-process-step-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  width: 210px;
+  justify-content: center;
+}
+
+.loan-process-step-title {
+  /* font-size: 30px; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #c59b6d;
+}
+
+/* 
+.loan-process-step-content {
+
+} 
+*/
+
+.loan-process-step-vl {
+  border-left: 5px solid #d99c39;
+  /* height: 100px; */
+  height: 10vh;
+}
+
+/* Section3 */
+.loan-process-section3-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loan-process-section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.loan-application-title {
+  color: #c59b6d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.loan-application-steps {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.step-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.step-block.move-right-step-block {
+  margin-left: 45px;
+}
+
+.step-block.move-left-step-block {
+  position: relative;
+  left: -20px;
+}
+
+.application-agreement {
+  background-color: #c59b6d;
+  height: 45px;
+  padding: 2px 10px 2px 10px;
+  letter-spacing: 5px;
+  font-size: 28px;
+}
+
+.box-right-triangle {
+  width: 0;
+  height: 0;
+  border: 22.5px solid transparent;
+  border-left: 10px solid #c59b6d;
+}
+
+.loan-form-area {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .loan-data {
+    background-color: #989898;
+    letter-spacing: 3px;
+    position: relative;
+    left: -12px;
+    height: 40px;
+    padding: 10px 5px 10px 0px;
+} */
+
+.loan-data {
+  background-color: #989898;
+  letter-spacing: 5px;
+  position: relative;
+  left: -12px;
+  height: 45px;
+  padding: 2px 5px 2px 0px;
+  font-size: 28px;
+}
+
+.loan-application-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+}
+
+.box-left-triangle {
+  width: 0;
+  height: 0;
+  border: 22.5px solid #989898;
+  border-left: 10px solid transparent;
+}
+
+.loan-data-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loan-input-box {
+  /* background-color: #f1f1f1;
+    border: transparent; */
+  margin-right: 30px;
+}
+
+.loan-submit-btn {
+  display: inline-block;
+  background: #c59b6d;
+  color: #fff;
+  border: none;
+  padding: 2px 60px;
+  margin: 30px;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 1920px) {
+}
+
+@media only screen and (min-width: 1290px) and (max-width: 1919px) {
+  /* section 2 */
+  .loan-process-step-num {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .loan-process-step-num {
+    font-size: 5.5rem;
+  }
+
+  /* section 3 */
+  .loan-form-area {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .loan-process-section2 {
+    display: none;
+  }
+}

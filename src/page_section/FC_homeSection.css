@@ -1,0 +1,203 @@
+.home-section {
+  width: 100%;
+}
+
+.section-space {
+  height: 100px;
+}
+
+/* Section 1 */
+.home-section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-gold-text {
+  position: absolute;
+  width: 42vw;
+  top: 10rem;
+  margin-left: 45rem;
+}
+
+.home-btn-service {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 45rem;
+  right: 5rem;
+}
+
+.home-btn-service img {
+  width: 150px;
+  margin: 10px;
+
+  cursor: pointer;
+  box-shadow: 4px 1px 8px 5px #b9b9b9;
+  transition: 0.3s ease-in-out;
+}
+.home-btn-service img:hover {
+  box-shadow: 4px 1px 8px 5px #919191;
+}
+
+/*end*/
+
+/*Section 2*/
+.home-section2 {
+  display: flex;
+  justify-content: center;
+}
+.calculator-container {
+  background-image: url(../images/home/home_calculatorBox.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 77rem;
+  height: 44rem;
+  margin-top: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -13rem;
+}
+
+.calculator {
+  width: fit-content;
+  margin-left: -15rem;
+}
+
+.calculator-box {
+  width: 69vw;
+  height: 87vh;
+  position: relative;
+  z-index: 10;
+}
+.calculator-man {
+  margin-top: 18rem;
+  width: 33rem;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+  margin-left: 50rem;
+}
+
+/*end*/
+
+/* Section 3 */
+.home-section3 {
+  margin-top: 2rem;
+  padding-top: 16rem;
+}
+
+.estimate-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.estimate-house {
+  width: 719px;
+  height: 641px;
+  margin-right: 4.4vw;
+}
+/*end*/
+
+@media only screen and (min-width: 1920px) {
+  /* section 1 */
+
+  .home-btn-service {
+    margin-left: auto;
+    margin-right: 238px;
+  }
+}
+
+@media only screen and (min-width: 1290px) and (max-width: 1919px) {
+  /* section 1 */
+
+  /* section 3 */
+  .estimate-house {
+    width: 560px;
+    height: 500px;
+    margin-left: -28px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1290px) {
+  .estimate-house {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .home-section2 {
+    height: 128vh;
+  }
+
+  .estimate-house {
+    display: none;
+  }
+  .home-btn-service {
+    justify-content: center;
+  }
+
+  .home-btn-service img {
+    width: 120px;
+  }
+
+  .home-banner1 img {
+    display: none;
+  }
+  .calculator-box {
+    width: 601px;
+  }
+
+  .home_banner_pic {
+    width: 100%;
+  }
+  .home-section3 {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-btn-service {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calculator-box {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1245px) {
+  .big-gold-text {
+    display: none;
+  }
+  .home-btn-service {
+    position: unset;
+    margin: 0;
+  }
+  .home-section1 {
+    margin-bottom: 10rem;
+  }
+}
+
+@media only screen and (max-width: 1340px) {
+  .calculator-man {
+    display: none;
+  }
+  .calculator-container {
+    background-image: url(../images/home/home_cal_mobile.png);
+    margin-left: 0;
+    background-position-x: center;
+  }
+  .calculator {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .calculator-container {
+    background-image: unset;
+  }
+}

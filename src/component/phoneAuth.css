@@ -1,0 +1,17 @@
+.btn-primary:active:focus {
+  box-shadow: unset;
+}
+
+.btn-primary:active {
+  background-color: #c59b6d !important;
+  border-color: unset;
+}
+
+.btn-primary:focus {
+  box-shadow: unset;
+}
+
+.msg-success {
+  margin-top: 10px;
+  color: #997753;
+}

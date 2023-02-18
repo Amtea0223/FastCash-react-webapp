@@ -1,0 +1,22 @@
+.mobileBottomNav {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  /* border-top: #ffffff86 solid; */
+}
+
+.mobileBottomNav span {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  color: white;
+}
+
+.mobileBottomNav .MuiBottomNavigation-root {
+  height: 50px !important;
+  background-color: #e6d3a1 !important;
+}
+
+.mobileBottomNav .MuiBottomNavigationAction-label {
+  width: 1920px !important;
+}

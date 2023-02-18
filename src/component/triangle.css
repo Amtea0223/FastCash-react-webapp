@@ -1,0 +1,12 @@
+.triangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.top-triangle {
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-top: 30px solid #C59B6D;
+}
