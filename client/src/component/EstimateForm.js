@@ -14,16 +14,18 @@ import { ENV } from "../config";
 
 const EstimateForm = ({ content }) => {
   const formRef = useRef();
+
   const SubmitButton = styled(Button)({
-    backgroundColor: "#C59B6D",
-    width: "180px",
-    height: "50px",
+    backgroundColor: "#77BF27",
+    width: "166px",
+    height: "71px",
     fontSize: "24px",
     fontWeight: "bold",
     "&:hover": {
       backgroundColor: "#707070",
     },
   });
+
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1024px)",
   });
@@ -156,7 +158,7 @@ const EstimateForm = ({ content }) => {
           ></input>
           <div className="estimForm">
             <div className="estimForm1">
-              <h2>物業估價</h2>
+              <h2>立即申請</h2>
             </div>
             <div className="estimForm2"></div>
             <div className="estimForm3">
@@ -176,12 +178,13 @@ const EstimateForm = ({ content }) => {
                 <TextField
                   id="outlined-name"
                   label=""
-                  value={appliciantname}
+                  value={phoneNumb}
                   variant="outlined"
                   required
                   sx={{ width: "40ch" }}
                   onChange={(e) => setAppliciantname(e.target.value)}
-                  name="name"
+                  inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+                  name="phoneNumb"
                 />
                 <label>身分證號碼</label>
                 <TextField
@@ -236,172 +239,27 @@ const EstimateForm = ({ content }) => {
                   }}
                 />
               </div>
-              {/* <div className="d-flex mb-4">
-                <div style={{ marginRight: "30px" }}>
-                  <label>姓名</label>
-                  <TextField
-                    id="outlined-name"
-                    label=""
-                    value={appliciantname}
-                    variant="outlined"
-                    required
-                    sx={{ width: "50ch" }}
-                    onChange={(e) => setAppliciantname(e.target.value)}
-                    name="name"
-                  />
-                </div>
-                <div>
-                  <label>支薪方式</label>
-                  <TextField
-                    label=""
-                    variant="outlined"
-                    value={phoneNumb}
-                    name="phoneNumb"
-                    required
-                    sx={{ width: "50ch" }}
-                    inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
-                    onChange={(e) => {
-                      setPhoneNumb(e.target.value);
-                    }}
-                  />
-                </div>
-              </div> */}
             </div>
-          </div>
-        </form>
-      )}
-      {isMobile && (
-        <form
-          ref={formRef}
-          onSubmit={(e) => sendEmail(e, formRef.current, "template_valuation")}
-        >
-          <input
-            type="text"
-            style={{ display: "none" }}
-            name="checklist"
-            defaultValue={checkList}
-          ></input>
-          <div className="estimForm-mob">
-            <div className="estimForm1-mob mx-5 pb-3">
-              <h2 className="pb-4">物業估價</h2>
-              <p>
-                為確保閣下的估價更準確，
-                我們將根據五間估價機構作綜合評估，稍後將有專人回覆閣下。
-              </p>
-            </div>
-            <div className="estimForm2 mx-5">
-              <div className="d-flex mb-3">
-                <Checkbox
-                  checked={confirm1}
-                  onChange={(e) => {
-                    setConfirm1(e.target.checked);
-                  }}
-                />
-                <label className="ms-2 ">
-                  {content?.valuation?.otherRemark1}
-                </label>
-              </div>
-              <div className="d-flex mb-3">
-                <Checkbox
-                  checked={confirm2}
-                  onChange={(e) => {
-                    setConfirm2(e.target.checked);
-                  }}
-                />
-                <label className="ms-2 ">
-                  {content?.valuation?.otherRemark2}
-                </label>
-              </div>
-            </div>
-            <div className="estimForm3-mob ">
-              <Box
-                sx={{
-                  "& > :not(style)": { m: 1, width: "80%" },
+            <div className="estimForm4">
+              <Checkbox
+                checked={confirm1}
+                onChange={(e) => {
+                  setConfirm1(e.target.checked);
                 }}
-                noValidate
-                autoComplete="off"
+              />
+              <label>
+                *本人已年滿18歲，閱讀並同意此網上的貸款細節及條款。
+                本人明白和同意，在此申請表提供的個人資料將記錄於資料系統作申請用途，在未獲得您同意前，不會向第三方披露你的個人資料。
+              </label>
+            </div>
+            <div className="mt-5 estimForm-btn">
+              <SubmitButton
+                variant="contained"
+                onClick={ValidateData}
+                type="submit"
               >
-                <TextField
-                  id="outlined-name"
-                  label="姓名"
-                  value={appliciantname}
-                  name="name"
-                  variant="outlined"
-                  required
-                  sx={{ width: "63ch" }}
-                  onChange={(e) => setAppliciantname(e.target.value)}
-                />
-
-                <TextField
-                  label="聯絡電話"
-                  variant="outlined"
-                  placeholder="e.g. 12345678"
-                  value={phoneNumb}
-                  name="phoneNumb"
-                  inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
-                  onChange={(e) => {
-                    setPhoneNumb(e.target.value);
-                  }}
-                />
-
-                <TextField
-                  id="outlined-multiline-static"
-                  variant="outlined"
-                  label="物業地址"
-                  value={address}
-                  name="address"
-                  multiline
-                  rows={6}
-                  required
-                  onChange={(e) => setAddress(e.target.value)}
-                />
-                <div className="estimForm4">
-                  <div>
-                    <p style={{ textAlign: "left", paddingLeft: "10px" }}>
-                      回覆方式 *
-                    </p>
-                    <div className="d-flex  align-items-center">
-                      <Checkbox
-                        checked={reply_phone}
-                        onChange={(e) => {
-                          setReply_phone(e.target.checked);
-                        }}
-                      />
-                      <label className="ms-2 ">{checkbox_list2[0].text}</label>
-                    </div>
-                    <div className="d-flex  align-items-center ">
-                      <Checkbox
-                        checked={reply_wtsapp}
-                        onChange={(e) => {
-                          setReply_wtsapp(e.target.checked);
-                        }}
-                      />
-                      <label className="ms-2 ">{checkbox_list2[1].text}</label>
-                    </div>
-                  </div>
-                  <div className="mt-3 estim-submitbtn">
-                    <SubmitButton
-                      variant="contained"
-                      onClick={ValidateData}
-                      type="submit"
-                    >
-                      提交
-                    </SubmitButton>
-                    {isVerified && (
-                      <label
-                        style={{
-                          color: "#c59b6d",
-                          fontWeight: "bold",
-                          fontSize: "18px",
-                          marginLeft: "20px",
-                        }}
-                      >
-                        成功提交!
-                      </label>
-                    )}
-                  </div>
-                </div>
-              </Box>
+                提交
+              </SubmitButton>
             </div>
           </div>
         </form>
