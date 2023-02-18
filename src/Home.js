@@ -17,6 +17,9 @@ const Home = ({ content }) => {
     </Helmet>      
       <div className="section1_container section1_bg">
         <HomeSection1 />
+        <div>
+          
+        </div>
       </div>
       <div className="section2_container section2_bg">
         <HomeSection2 />
