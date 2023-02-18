@@ -6,6 +6,7 @@ import HomeSection3 from "./page_section/HomeSection3"
 import Footer from "./component/Footer"
 import { Helmet } from "react-helmet"
 import HomeSection4 from "./page_section/HomeSection4"
+import HomeSection5 from "./page_section/HomeSection5"
 
 const Home = ({ content }) => {
   return (
@@ -32,6 +33,9 @@ const Home = ({ content }) => {
       </div>
       <div className="section3_container section3_bg">
         <HomeSection3 content={content} />
+      </div>
+      <div className="section5_container section5_bg">
+        <HomeSection5/>
       </div>
       <Footer />
     </div>

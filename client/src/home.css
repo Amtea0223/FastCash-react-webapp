@@ -31,7 +31,7 @@
 .section3_bg {
   background-image: url("./images/home/bg3.png");
   width: 100%;
-  height: 79rem;
+  height: 50rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0;
@@ -49,6 +49,12 @@
 .section4_container
 {
   height: 50rem;
+}
+
+.section5_container
+{
+  height: 40rem;
+  margin-top: 100px;
 }
 
 
