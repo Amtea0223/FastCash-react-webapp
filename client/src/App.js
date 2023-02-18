@@ -57,14 +57,14 @@ function App() {
     <BrowserRouter> 
       <div className="App">
         {/* <ToastContainer autoClose={10000} hideProgressBar /> */}
-        <ReactChatbot />
-        <FloatBtnList />
-        {showBottomNav && (
+        {/* <ReactChatbot /> */}
+        {/* <FloatBtnList /> */}
+        {/* {showBottomNav && (
           <ApplicationBtn
             isBottomNav={true}
             setShowBottomNav={setShowBottomNav}
           />
-        )}
+        )} */}
         <NavBar content={data} postData={post_result.data} />
         <div className="top-space"></div>
         <Routes>
