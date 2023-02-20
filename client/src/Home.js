@@ -11,11 +11,11 @@ import HomeSection5 from "./page_section/HomeSection5"
 const Home = ({ content }) => {
   return (
     <div className="home-container">
-       <Helmet>
+       {/* <Helmet>
     <title>{content?.MT[0].metaTitle}</title>
     <meta name='description' content={content?.MT[0].metaDescription}/>
     <meta name='keywords' content={content?.MT[0].metaKeywords}/>
-    </Helmet>      
+    </Helmet>       */}
       <div className="section1_container section1_bg">
         <HomeSection1 />
         <div>

@@ -45,7 +45,8 @@ const EstimateForm = ({ content }) => {
   const [isVerified, setisVerified] = useState(false);
   const [checkList, setCheckList] = useState("");
 
- 
+
+  
 
   const CleanData = () => {
     setConfirm1(false);
@@ -66,28 +67,35 @@ const EstimateForm = ({ content }) => {
       paymentMethod: paymentMethod,
       purpose: purpose,
       amount: amount,
-      agreeTerms1: confirm1,
-      timestamp: moment()
-        .utcOffset(8)
-        .format("YYYY-MM-DD HH:mm:ss"),
+      // agreeTerms1: confirm1,
+      // timestamp: moment()
+      //   .utcOffset(8)
+      //   .format("YYYY-MM-DD HH:mm:ss"),
     };
 
-    fetch(ENV + "/api/v1/valuation", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    })
-      .then((res) => {
-        if (res.ok) {
-          setisVerified(true);
-        }
+    try {
+      fetch(ENV + "/api/apply", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       })
-      .catch((err) => {
-        console.log(err.message);
-      })
-      .finally(() => {
-        CleanData();
-      });
+        .then((res) => {
+          if (res.ok) {
+            setisVerified(true);
+          }
+          
+        })
+        .catch((err) => {
+          console.log(err.message);
+        })
+        .finally(() => {
+          CleanData();
+        });
+    } catch (error) {
+      
+    }finally{
+      CleanData();
+    }    
   };
 
   const validatePhoneInput = (val) => {
@@ -198,7 +206,7 @@ const EstimateForm = ({ content }) => {
                   name="purpose"
                   required
                   sx={{ width: "40ch" }}
-                  inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+                  // inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                   onChange={(e) => {
                     setPurpose(e.target.value);
                   }}

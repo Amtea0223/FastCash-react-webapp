@@ -27,14 +27,14 @@ const NavBar = ({ content, postData, props }) => {
   //   { title: content?.loanService[5].title, link: "/onlineLoan" },
   // ]
 
-  const servicesDrpList = [
-    { title: content?.loanService[0].title, link: "/tu" },
-    { title: content?.loanService[1].title, link: "/mortgage" },
-    { title: content?.loanService[2].title, link: "/smeloan" },
-    { title: content?.loanService[3].title, link: "/privateLending" },
-    { title: content?.loanService[4].title, link: "/creditcard" },
-    { title: content?.loanService[5].title, link: "/onlineLoan" },
-  ];
+  // const servicesDrpList = [
+  //   { title: content?.loanService[0].title, link: "/tu" },
+  //   { title: content?.loanService[1].title, link: "/mortgage" },
+  //   { title: content?.loanService[2].title, link: "/smeloan" },
+  //   { title: content?.loanService[3].title, link: "/privateLending" },
+  //   { title: content?.loanService[4].title, link: "/creditcard" },
+  //   { title: content?.loanService[5].title, link: "/onlineLoan" },
+  // ];
 
   let servicesDrpList_id = 0;
   const blogPostTitle = postData ? postData[postData.length - 1].title : "";
