@@ -44,8 +44,8 @@ const NavBar = ({ content, postData, props }) => {
 
   return (
     <div className="navbar-container">
-      <Navbar bg="white" variant="white" expand="lg">
-        <Container>
+      <Navbar bg="white" variant="white" expand="xxl">
+        <Container >
           <div className="nav-logo-group">
             <Navbar.Brand href="/">
               <img className="nav-logo" src={logo} alt="" />
@@ -61,7 +61,7 @@ const NavBar = ({ content, postData, props }) => {
               {!isMobileOrTablet}
             </div>
 
-            <Nav className="ms-auto nav-text mt-2">
+            <Nav className="ms-auto nav-text mt-2 nav-link">
               <Nav.Link href="/privateLoan">私人貸款</Nav.Link>
               <NavDropdown.Divider />
               <Nav.Link href="/privateLoan">按揭及業主貸款</Nav.Link>
@@ -69,6 +69,7 @@ const NavBar = ({ content, postData, props }) => {
               <Nav.Link href="/privateLoan">貸款迷思</Nav.Link>
               <Nav.Link href="/privateLoan">關於 FAST CASH</Nav.Link>
               <Nav.Link href="/privateLoan">聯絡我們</Nav.Link>
+              <Nav.Link href="https://fastcash-proj.web.app/">登入</Nav.Link>
               {/* <div className="dropdown-divider"></div> */}
               {/* <Nav.Link href={"/hottopics/" + blogPostOrdering + "/" + String(blogPostTitle).replace(/\s/g, "")}>{content?.menu[4].label}</Nav.Link> */}
             </Nav>
