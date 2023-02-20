@@ -1,13 +1,13 @@
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
-import "./navbar.css"
-import logo from "../images/FC-logo.png"
-import ApplicationBtn from "./ApplicationBtn"
-import { useMediaQuery } from "react-responsive"
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import "./navbar.css";
+import logo from "../images/FC-logo.png";
+import ApplicationBtn from "./ApplicationBtn";
+import { useMediaQuery } from "react-responsive";
 
-const NavBar = ({ content,postData }) => {
+const NavBar = ({ content, postData, props }) => {
   const isMobileOrTablet = useMediaQuery({
     query: "(max-width: 990px)",
-  })
+  });
 
   // const servicesDrpList = [
   //   { title: "免TU貸款", link: "/tu" },
@@ -17,7 +17,7 @@ const NavBar = ({ content,postData }) => {
   //   { title: "清卡數 | 稅貸", link: "/creditcard" },
   //   { title: "網上貸款 | 極速批核", link: "/onlineLoan" },
   // ]
-  
+
   // const servicesDrpList = [
   //   { title: content?.loanService[0].title, link: "/tu" },
   //   { title: content?.loanService[1].title, link: "/mortgage" },
@@ -34,15 +34,17 @@ const NavBar = ({ content,postData }) => {
     { title: content?.loanService[3].title, link: "/privateLending" },
     { title: content?.loanService[4].title, link: "/creditcard" },
     { title: content?.loanService[5].title, link: "/onlineLoan" },
-  ]
+  ];
 
-  let servicesDrpList_id = 0
-  const blogPostTitle = postData?postData[postData.length-1].title:""
-  const blogPostOrdering = postData?postData[postData.length-1].ordering:""
+  let servicesDrpList_id = 0;
+  const blogPostTitle = postData ? postData[postData.length - 1].title : "";
+  const blogPostOrdering = postData
+    ? postData[postData.length - 1].ordering
+    : "";
 
   return (
     <div className="navbar-container">
-      <Navbar  expand="lg">
+      <Navbar bg="white" variant="white" expand="lg">
         <Container>
           <div className="nav-logo-group">
             <Navbar.Brand href="/">
@@ -59,25 +61,22 @@ const NavBar = ({ content,postData }) => {
               {!isMobileOrTablet}
             </div>
 
-
-
             <Nav className="ms-auto nav-text mt-2">
-              <Nav.Link href="/">私人貸款</Nav.Link>
+              <Nav.Link href="/privateLoan">私人貸款</Nav.Link>
               <NavDropdown.Divider />
-              <Nav.Link href="/aboutus">按揭及業主貸款</Nav.Link>
-              <Nav.Link href="/">結餘轉戶</Nav.Link>
-              <Nav.Link href="/application/loanprocess">貸款迷思</Nav.Link>
-              <Nav.Link href="/">關於 FAST CASH</Nav.Link>
-              <Nav.Link href="/">聯絡我們</Nav.Link>
+              <Nav.Link href="/privateLoan">按揭及業主貸款</Nav.Link>
+              <Nav.Link href="/privateLoan">結餘轉戶</Nav.Link>
+              <Nav.Link href="/privateLoan">貸款迷思</Nav.Link>
+              <Nav.Link href="/privateLoan">關於 FAST CASH</Nav.Link>
+              <Nav.Link href="/privateLoan">聯絡我們</Nav.Link>
               {/* <div className="dropdown-divider"></div> */}
               {/* <Nav.Link href={"/hottopics/" + blogPostOrdering + "/" + String(blogPostTitle).replace(/\s/g, "")}>{content?.menu[4].label}</Nav.Link> */}
             </Nav>
-            
           </Navbar.Collapse>
         </Container>
       </Navbar>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

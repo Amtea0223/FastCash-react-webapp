@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./App.css"
-import { BrowserRouter, Routes, Route  } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import useFetch from "./codeHelper/useFetch"
 import AboutUs from "./AboutUs"
 import NavBar from "./component/NavBar"
@@ -16,7 +16,6 @@ import PrivateLending from "./LoanServicesPages/PrivateLending"
 import Mortgage from "./LoanServicesPages/Mortgage"
 import Creditcard from "./LoanServicesPages/Creditcard"
 import OnlineLoan from "./LoanServicesPages/OnlineLoan"
-import PrivateLoan from "./PrivateLoan"
 
 // import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.min.css"
@@ -35,10 +34,6 @@ function App() {
   const { data } = useFetch(ENV + "/api/v1/content")
   const post_result = useFetch(ENV + "/api/v1/post")
   const [showBottomNav, setShowBottomNav] = useState(true)
-
-  const pathname = window.location.pathname;
-
-
   // const gtag_link = data?.MT[14].description    
   // const gtag_dataLayer = data?.MT[15].description  
   // useEffect(() => {
@@ -70,47 +65,50 @@ function App() {
             setShowBottomNav={setShowBottomNav}
           />
         )} */}
-        <NavBar content={data} postData={post_result.data}   />
-        {pathname === '/' ? null : <div className="top-space" />}
-        {/* <div className="top-space"></div> */}
+        <NavBar content={data} postData={post_result.data} />
+        <div className="top-space"></div>
         <Routes>
-          <Route exact path="/" element={<Home content={data}  />} />
+          <Route exact path="/" element={<Home content={data} />} />
           <Route
-            exact
-            path="/privateLoan"
-            element={<PrivateLoan content={data} />}
-          />
-          {/* <Route
             exact
             path="/application/:content"
             element={<Application setShowBottomNav={setShowBottomNav} data={data} />}
-          /> */}
+          />
+          <Route
+            exact
+            path="/aboutus"
+            element={<AboutUs content={data} />}
+          />
+          <Route
+            exact
+            path="/onlineLoan"
+            element={<OnlineLoan content={data?.LoanServicePage} metaData={data} />}
+          />
+          <Route
+            exact
+            path="/creditcard"
+            element={<Creditcard content={data?.LoanServicePage} metaData={data} />}
+          />
           <Route
             exact
             path="/mortgage"
-            element={<PrivateLoan content={data} />}
+            element={<Mortgage content={data?.LoanServicePage} metaData={data} />}
           />
           <Route
             exact
-            path="/balance"
-            element={<PrivateLoan content={data} />}
+            path="/privateLending"
+            element={<PrivateLending content={data?.LoanServicePage} metaData={data}/>}
           />
           <Route
             exact
-            path="/question"
-            element={<PrivateLoan content={data} />}
+            path="/smeloan"
+            element={<SmeLoan content={data?.LoanServicePage} metaData={data} />}
           />
           <Route
             exact
-            path="/about"
-            element={<PrivateLoan content={data} />}
+            path="/tu"
+            element={<TU content={data?.LoanServicePage} metaData={data} />}
           />
-          <Route
-            exact
-            path="/contact"
-            element={<PrivateLoan content={data} />}
-          />
-          
           {/* <Route
             exact
             path="/loanservices"

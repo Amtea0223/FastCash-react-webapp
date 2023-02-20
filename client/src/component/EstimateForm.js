@@ -34,49 +34,39 @@ const EstimateForm = ({ content }) => {
 
   const [appliciantname, setAppliciantname] = useState("");
   const [phoneNumb, setPhoneNumb] = useState("");
-  const [address, setAddress] = useState("");
-  const [reply_phone, setReply_phone] = useState(false);
-  const [reply_wtsapp, setReply_wtsapp] = useState(false);
+  const [appliciantid, setAppliciantid] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState("");
+  const [purpose, setPurpose] = useState("");
+  const [amount, setAmount] = useState("");
   const [confirm1, setConfirm1] = useState(false);
+
+
   const [confirm2, setConfirm2] = useState(false);
   const [isVerified, setisVerified] = useState(false);
-
   const [checkList, setCheckList] = useState("");
 
-  useEffect(() => {
-    let reply_method = "";
-    let msg = "";
-    if (reply_phone && reply_wtsapp) {
-      reply_method = "電話和WhatsApp";
-    } else if (reply_phone && !reply_wtsapp) {
-      reply_method = "電話";
-    } else if (!reply_phone && reply_wtsapp) {
-      reply_method = "WhatsApp";
-    }
-    if (confirm2) msg = "接受推廣，回覆方式： " + reply_method;
-    else msg = "不接受推廣，回覆方式： " + reply_method;
-    setCheckList(msg);
-  }, [reply_phone, reply_wtsapp, confirm2]);
+ 
 
   const CleanData = () => {
     setConfirm1(false);
-    setConfirm2(false);
+    // setConfirm2(false);
     setAppliciantname("");
+    setAppliciantid("");
     setPhoneNumb("");
-    setAddress("");
-    setReply_phone(false);
-    setReply_wtsapp(false);
+    setPaymentMethod("");
+    setPurpose("");
+    setAmount("");
   };
 
   const handleSubmit = () => {
     const data = {
       name: appliciantname,
       phone: phoneNumb,
-      byWhatsapp: reply_wtsapp,
-      byPhone: reply_phone,
-      address: address,
+      id: appliciantid,
+      paymentMethod: paymentMethod,
+      purpose: purpose,
+      amount: amount,
       agreeTerms1: confirm1,
-      agreeTerms2: confirm2,
       timestamp: moment()
         .utcOffset(8)
         .format("YYYY-MM-DD HH:mm:ss"),
@@ -109,6 +99,8 @@ const EstimateForm = ({ content }) => {
     }
   };
 
+
+
   const ValidateData = () => {
     setisVerified(false);
     if (!!!confirm1) {
@@ -119,29 +111,15 @@ const EstimateForm = ({ content }) => {
     } else if (validatePhoneInput(phoneNumb) === false) {
       setisVerified(false);
       return alert("請填寫正確的電話號碼");
-    } else if (address.replace(/\s/g, "") === "") {
+    } else if (amount === "" || isNaN(amount)) {
       setisVerified(false);
-      return alert("請填寫地址");
-    } else if (!reply_phone && !reply_wtsapp) {
-      setisVerified(false);
-      return alert("請至少選擇一種回覆方式");
+      return alert("請填寫正確的貸款金額");
     } else {
       handleSubmit();
     }
   };
 
-  const checkbox_list2 = [
-    {
-      id: 1,
-      text: "電話",
-      state: setReply_phone,
-    },
-    {
-      id: 2,
-      text: "WhatsApp",
-      state: setReply_wtsapp,
-    },
-  ];
+  
 
   return (
     <>
@@ -182,7 +160,7 @@ const EstimateForm = ({ content }) => {
                   variant="outlined"
                   required
                   sx={{ width: "40ch" }}
-                  onChange={(e) => setAppliciantname(e.target.value)}
+                  onChange={(e) => setPhoneNumb(e.target.value)}
                   inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                   name="phoneNumb"
                 />
@@ -190,12 +168,12 @@ const EstimateForm = ({ content }) => {
                 <TextField
                   id="outlined-name"
                   label=""
-                  value={appliciantname}
+                  value={appliciantid}
                   variant="outlined"
                   required
                   sx={{ width: "40ch" }}
-                  onChange={(e) => setAppliciantname(e.target.value)}
-                  name="name"
+                  onChange={(e) => setAppliciantid(e.target.value)}
+                  name="appliciantid"
                 />
               </div>
               <div className="estimForm3-right">
@@ -203,39 +181,39 @@ const EstimateForm = ({ content }) => {
                 <TextField
                   label=""
                   variant="outlined"
-                  value={phoneNumb}
-                  name="phoneNumb"
+                  value={paymentMethod}
+                  name="paymentMethod"
                   required
                   sx={{ width: "40ch" }}
-                  inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+                  // inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                   onChange={(e) => {
-                    setPhoneNumb(e.target.value);
+                    setPaymentMethod(e.target.value);
                   }}
                 />
                 <label>貸款目的</label>
                 <TextField
                   label=""
                   variant="outlined"
-                  value={phoneNumb}
-                  name="phoneNumb"
+                  value={purpose}
+                  name="purpose"
                   required
                   sx={{ width: "40ch" }}
                   inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                   onChange={(e) => {
-                    setPhoneNumb(e.target.value);
+                    setPurpose(e.target.value);
                   }}
                 />
                 <label>貸款金額</label>
                 <TextField
                   label=""
                   variant="outlined"
-                  value={phoneNumb}
-                  name="phoneNumb"
+                  value={amount}
+                  name="amount"
                   required
                   sx={{ width: "40ch" }}
                   inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                   onChange={(e) => {
-                    setPhoneNumb(e.target.value);
+                    setAmount(e.target.value);
                   }}
                 />
               </div>

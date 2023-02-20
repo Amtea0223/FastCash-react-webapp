@@ -1,3 +1,4 @@
+
 .banner-btn {
   text-align: right;
   margin-right: 14vw;
@@ -21,28 +22,75 @@
 
 .banner-pic {
   background-repeat: no-repeat !important;
-  background-size: cover !important;
+  /* background-size: contain !important; */
+  background-size: 100% auto;
+  background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 150vh;
+
 }
 
 .banner-title {
-  background-color: #00000059;
-  width: 300px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+  position: absolute;
+  background-color: white;
+  border-radius:50px;
+  width: 600px;
+  height: 500px;
+  /* justify-content: center; */
   text-align: left;
   margin-left: 10vw;
 }
 
-.banner-title span {
-  color: #f0b764;
+.banner-title .header
+{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 200px;
+  color: #A2C43A;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  text-indent: 3px;
+ 
+}
+
+.banner-title .header .line {
+  height: 1px;
+  background: #77BF27;
+  height: 3px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+
+.banner-title h4 {
+  display: inline-block;
+  color: #A2C43A;
   font-size: 2rem;
   letter-spacing: 6px;
   text-indent: 3px;
 }
+.banner-title .body
+{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  place-content: center;
+}
+
+.banner-title .body .item
+{
+  display: grid;
+  width: 250px;
+  justify-content: center;
+  justify-items: center;
+
+
+}
+
 
 @media only screen and (max-width: 975px) {
   .banner-pic {

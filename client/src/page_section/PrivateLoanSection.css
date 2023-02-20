@@ -1,0 +1,44 @@
+.PrivateLoanSection1
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.PrivateLoanSection1-left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+
+}
+
+.PrivateLoanSection1-left h3
+{
+    width: 40vw;
+    margin-bottom: 50px;
+}
+
+.PrivateLoanSection1-left p
+{
+    width: 40vw;
+}
+
+
+
+.PrivateLoanSection1-right
+{
+
+    background-image:url('../images//applybtn_bg.png');
+    width: 30%;
+    background-size: contain;
+    height: 50vh;
+    background-repeat: no-repeat !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

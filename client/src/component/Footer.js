@@ -30,72 +30,47 @@ const Footer = () => {
   const commonLink_list = [
     {
       title: "貸款迷思",
-      url: "/",
+      url: "/privateLoan",
     },
     {
       title: "聯絡我們",
-      url: "/aboutus",
+      url: "/privateLoan",
     },
     {
       title: "免責聲明",
-      url: "/disclaimer",
+      url: "/privateLoan",
     },
     {
       title: "隱私政策",
-      url: "/aboutus",
+      url: "/privateLoan",
     },
     {
       title: "個人資料收集聲明",
-      url: "/aboutus",
+      url: "/privateLoan",
     },
     {
       title: "放債人條例",
-      url: "/ordinance",
+      url: "/privateLoan",
     },
   ]
 
-  // const loanServices_list = [
-  //   {
-  //     title: "免TU貸款",
-  //     url: "/loanservices?#TU",
-  //   },
-  //   {
-  //     title: "物業一按 | 二按",
-  //     url: "/loanservices?#mortgage",
-  //   },
-  //   {
-  //     title: "中小企周轉貸款",
-  //     url: "/loanservices?#smeloan",
-  //   },
-  //   {
-  //     title: "私人借貸",
-  //     url: "/loanservices?#privateLending",
-  //   },
-  //   {
-  //     title: "清卡數及稅貸",
-  //     url: "/loanservices?#creditcard",
-  //   },
-  //   {
-  //     title: "網上貸款",
-  //     url: "/loanservices?#onlineLoan",
-  //   },
-  // ]
+
   const loanServices_list = [
     {
       title: "私人貸款",
-      url: "/tu",
+      url: "/privateLoan",
     },
     {
       title: "按揭及業主貸款",
-      url: "/mortgage",
+      url: "/privateLoan",
     },
     {
       title: "結餘轉戶",
-      url: "/smeloan",
+      url: "/privateLoan",
     },
     {
       title: "申請表格",
-      url: "/privateLending",
+      url: "/privateLoan",
     },
   ]
 
