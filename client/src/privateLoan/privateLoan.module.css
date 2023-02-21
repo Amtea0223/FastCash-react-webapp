@@ -1,0 +1,9 @@
+.banner_pic{
+    background: url('../images/privateLoan/bg.png');
+    background-repeat: no-repeat !important;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    height: 150vh;
+}
+

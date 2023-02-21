@@ -6,10 +6,21 @@ import icon4 from "../images/privateLoan/icon4.png";
 
 import "./banner.css";
 const Banner = ({ name, name_ch, bg_url }) => {
+
+const banner_style = {
+  background: `url(${bg_url})`,
+  backgroundSize:'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition:'center',
+  width:'100%',
+  height:'150vh',
+}
+
+
   return (
     <div className="banner">
       <div className="banner-container">
-        <div style={{ background: `url(${bg_url})` }} className="banner-pic">
+        <div className="banner-pic" style={banner_style}>
           <div className="banner-title">
             <div className="header" style={{ color: "#A2C43A" }}>
               {/* <span style={{color:"#A2C43A"}}> */}

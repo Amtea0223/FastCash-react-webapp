@@ -13,11 +13,11 @@ import bg from "./images/privateLoan/bg.png";
 const PrivateLoan = ({ content }) => {
   return (
     <div className="PrivateLoan">
-      <Helmet>
+      {/* <Helmet>
         <title>{content?.MT[0].metaTitle}</title>
         <meta name="description" content={content?.MT[0].metaDescription} />
         <meta name="keywords" content={content?.MT[0].metaKeywords} />
-      </Helmet>
+      </Helmet> */}
       <div className="PrivateLoan-section1-container">
         <Banner name={"Private Loan"} name_ch={"私人貸款"} bg_url={bg} />
       </div>

@@ -20,15 +20,6 @@
   color: white;
 }
 
-.banner-pic {
-  background-repeat: no-repeat !important;
-  /* background-size: contain !important; */
-  background-size: 100% auto;
-  background-position: center;
-  width: 100%;
-  height: 150vh;
-
-}
 
 .banner-title {
   margin-top: 50px;
