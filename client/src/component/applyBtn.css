@@ -1,0 +1,9 @@
+.apply-btn-pic
+{
+    background-image: url("../images//applybtn_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    width: 100%;
+    display: block;
+}

@@ -17,6 +17,7 @@ import Mortgage from "./LoanServicesPages/Mortgage"
 import Creditcard from "./LoanServicesPages/Creditcard"
 import OnlineLoan from "./LoanServicesPages/OnlineLoan"
 import PrivateLoan from "./PrivateLoan"
+import MortgageLoan from "./mortgageLoan/MortgageLoan"
 
 // import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.min.css"
@@ -88,7 +89,7 @@ function App() {
           <Route
             exact
             path="/mortgage"
-            element={<PrivateLoan content={data} />}
+            element={<MortgageLoan content={data} />}
           />
           <Route
             exact

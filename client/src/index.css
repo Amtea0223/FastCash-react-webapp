@@ -1,22 +1,135 @@
-body {
-  margin: 0;
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@font-face {
+  font-family: "pingfangBold";
+  src: url("./font/pingfang_hk_bold.ttf");
+}
+@font-face {
+  font-family: "pingfangSmall";
+  src: url("./font/pingfang_hk_small.otf");
 }
 
-body,
-html {
-  min-height: 100%;
-}
-
+div,
+p,
+a,
+span,
 h1,
-h2 {
-  color: #c59b6d;
-  font-weight: bold !important;
+h2,
+h3,
+h4,
+h5,
+button,
+label {
+  /* font-family: "Noto Sans TC", sans-serif !important; */
+  font-family: "pingfangBold" !important;
 }
 
 a {
   text-decoration: none !important;
+  transition: 0.2s;
+  /* color: inherit !important; */
 }
 
-form {
-  display: unset !important;
+a:hover {
+}
+
+/* .dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+
+.dropdown:hover .dropdown-menu.show {
+  display: block !important;
+}
+.dropdown-menu.show {
+  display: none !important;
+} */
+
+/* top menu border */
+.dropdown-menu {
+  --bs-dropdown-border-color: 0 !important;
+}
+
+.navbar {
+  --bs-navbar-nav-link-padding-x: 1rem !important;
+}
+
+:root {
+  --title_grey: #565656;
+}
+
+.color-p1 {
+  color: #989898;
+}
+.color1 {
+  color: #ff8812;
+}
+.color2 {
+  color: #7d41d4;
+}
+.color3 {
+  color: #575757;
+}
+
+.color4 {
+  color: #4d00c1;
+}
+.color5 {
+  color: #b191e2;
+}
+.color6 {
+  color: #4a1796;
+}
+
+.alertcolor {
+  color: rgb(197, 34, 34);
+}
+
+.purple_btn {
+  background-color: #4d2988 !important;
+  color: white !important;
+  border: 0;
+  width: 106px;
+}
+
+.title-h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  margin-bottom: 0.5rem;
+}
+.title-h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  margin-bottom: 0.5rem;
+}
+
+.desc-style span {
+  font-size: 1.2rem;
+  font-family: "pingfangSmall" !important;
+  line-height: 1.7;
+}
+
+/** input style**/
+.tone1 input {
+  color: #4e2a88 !important;
+}
+.tone1 .form-control:focus {
+  box-shadow: 0 0 4px 3px #4e2a8859 !important;
+  border: #4e2a88 1px solid !important;
+}
+.tone1 .form-control {
+  border: #8f8f8f9c 1px solid !important;
+}
+
+.tone1 .form-control::placeholder {
+  color: #c8c8c8ed !important;
+}
+/** end input style**/
+
+@media only screen and (min-width: 1200px) {
+  .title-h1 {
+    font-size: 2.5rem;
+  }
+  .title-h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
 }

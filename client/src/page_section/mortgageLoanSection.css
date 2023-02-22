@@ -1,0 +1,119 @@
+.MortgageLoanSection1
+{
+  display: flex;
+  flex-direction: column;
+}
+.MortgageLoanSection1 .header h2
+{
+  color: #A2C43A;
+}
+
+.MortgageLoanSection1 .title h4
+{
+
+  margin-bottom: 30px;
+}
+
+.MortgageLoanSection1 .desc
+{
+  margin-left: 10rem;
+}
+
+
+
+.MortgageLoanSection1-1
+{
+  align-self: center;
+}
+
+.MortgageLoanSection1-1 .desc
+{
+  width: 40vw;
+}
+
+.MortgageLoanSection1-2-left
+{
+  margin-left: 5vw;
+}
+
+.MortgageLoanSection1-2
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8rem;
+}
+
+.MortgageLoanSection1-2 .desc
+{
+  width: 40vw;
+}
+
+
+.MortgageLoanSection1-2-right
+{
+  position: relative;
+}
+
+.MortgageLoanSection1-2-right img
+{
+  transform: scale(0.6);
+  position: absolute;
+  left: -15rem;
+  top: -15rem;
+}
+
+.MortgageLoanSection1-3
+{
+  margin-top: 10rem;
+  align-self: center;
+}
+
+.MortgageLoanSection1-3 .desc
+{
+  width: 40vw;
+}
+
+
+
+/* Mortgage Loan Section 2  */
+
+.MortgageLoanSection2
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.MortgageLoanSection2-left
+{
+  align-self: center;
+  margin-right: -5rem;
+}
+
+.MortgageLoanSection2-left-row-item
+{
+  width: 300px;
+}
+
+.MortgageLoanSection2-left-row-item span 
+{
+  font-size: 25px;
+  color: #A2C43A;
+}
+
+.MortgageLoanSection2-left img
+{
+  transform: scale(0.8);
+}
+
+.MortgageLoanSection2-left-row
+{
+  display: flex;
+}
+
+
+
+.MortgageLoanSection2-right img
+{
+  transform: scale(0.7);
+}
