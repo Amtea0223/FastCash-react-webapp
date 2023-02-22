@@ -17,6 +17,7 @@ export default function ApplicationBtn({
   isAnimBtn,
   isAboutusBtn,
   isBottomNav,
+  isApplyBtn,
 }) {
   const [open, setOpen] = useState(false)
   // const theme = useTheme()
@@ -41,6 +42,12 @@ export default function ApplicationBtn({
           <span>立即申請</span>
         </button>
       )}
+
+      {/* {isApplyBtn && (
+        <button variant="contained" type="submit" className="apply-btn">
+            立即申請
+        </button>
+      )} */}
 
       {isBannerBtn && (
         <button className="banner-btn-apply" onClick={handleClickOpen}>

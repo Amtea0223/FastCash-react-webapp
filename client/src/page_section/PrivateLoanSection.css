@@ -1,17 +1,23 @@
 .PrivateLoanSection1
 {
+    
+}
+
+.PrivateLoanSection1-upper
+{
     display: flex;
     flex-direction: row;
     position: relative;
+    height: 70vh;
 }
 
 .PrivateLoanSection1-left
 {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
 
 }
 
@@ -31,9 +37,9 @@
 .PrivateLoanSection1-right
 {
 
-    background-image:url('../images//applybtn_bg.png');
+    /* background-image:url('../images//applybtn_bg.png'); */
     width: 30%;
-    background-size: contain;
+    /* background-size: contain; */
     height: 50vh;
     background-repeat: no-repeat !important;
     display: flex;
@@ -42,3 +48,49 @@
 
 }
 
+
+.PrivateLoanSection1-right img
+{
+    position: absolute;
+    transform: scale(0.7);
+    top: -14rem;
+}
+
+.apply-btn-container
+{
+    width: 700rem;
+    height: 600rem;
+    background-color: black;
+}
+
+
+.PrivateLoanSection1-lower
+{
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    position: relative;
+}
+.PrivateLoanSection1-lower img
+{
+    position: absolute;
+    transform: rotate(320deg);
+    left: 49rem;
+    top: -10rem;
+    /* margin-left: 40rem; */
+}
+
+
+.PrivateLoanSection1-lower-word
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem ;
+}
+
+.PrivateLoanSection1-lower img
+{
+    position: absolute;
+    z-index: -1;
+}

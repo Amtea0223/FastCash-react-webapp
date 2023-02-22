@@ -1,8 +1,12 @@
 import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import "./PrivateLoanSection.css"
+import "./PrivateLoanSection.css";
+import AppyBtn from "../component/ApplyBtn";
+import square_bg from "../images/square_bg.png";
+import applybtn_bg from "../images/applybtn_bg.png";
 
 const ApplyButton = styled(Button)({
+  color:"#FFF",
   backgroundColor: "#77BF27",
   width: "166px",
   height: "71px",
@@ -13,25 +17,31 @@ const ApplyButton = styled(Button)({
   },
 });
 
-const PrivateLoanSection1 = ({ content }) => {
+const PrivateLoanSection1 = ({ title, desc }) => {
   return (
     <div className="PrivateLoanSection1">
-      <div className="PrivateLoanSection1-left">
-        <div className="PrivateLoanSection1-left-header">
-          <h3>
-            為客戶提供一個特快的「網上」貸款體驗。客人可選擇透過網上平台完成整個貸款申請過程，並即時提取現金。{" "}
-          </h3>
+      <div className="PrivateLoanSection1-upper">
+        <div className="PrivateLoanSection1-left">
+          <div className="PrivateLoanSection1-left-header">
+            <h3>{title} </h3>
+          </div>
+          <div className="PrivateLoanSection1-left-desc">
+            <p>{desc}</p>
+          </div>
         </div>
-        <div className="PrivateLoanSection1-left-desc">
-          <p>
-            過往的信貸紀錄不會影響你的申請，私人貸款服務配合不同人士需要，申請貸款從未如此輕鬆簡單。我們為客戶提供全面的財務管理方案更可享低息及
-          </p>
+        <div className="PrivateLoanSection1-right">
+          <img src={applybtn_bg}/>
+          <ApplyButton>立即申請</ApplyButton>
         </div>
       </div>
-      <div className="PrivateLoanSection1-right">
-        <ApplyButton variant="contained" type="submit">
-          立即申請
-        </ApplyButton>
+      <div className="PrivateLoanSection1-lower">
+          <img classname="square" src={square_bg}/>
+          <div className="PrivateLoanSection1-lower-word">
+            <span>註: 根據《放債人條例》年利率最高不超過48%。</span>
+            <span>供款期由6個月至個120月常見還款例子:</span>
+            <span>年利率為28%情況下的貸款HK$10,000，還款期數12期，每期還款額為 HK$965</span>
+          </div>
+          
       </div>
     </div>
   );

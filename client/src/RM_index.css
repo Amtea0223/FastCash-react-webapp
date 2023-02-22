@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+body,
+html {
+  min-height: 100%;
+}
+
+h1,
+h2 {
+  color: #c59b6d;
+  font-weight: bold !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+form {
+  display: unset !important;
+}
