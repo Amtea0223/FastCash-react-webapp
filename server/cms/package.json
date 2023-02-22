@@ -3,10 +3,12 @@
   "version": "1.0.2",
   "private": true,
   "scripts": {
+    "deploy": "keystone build && keystone prisma migrate deploy",
     "dev": "keystone dev",
     "start": "keystone start",
     "build": "keystone build",
-    "postinstall": "keystone postinstall"
+    "postinstall": "keystone postinstall",
+    "destory":"keystone prisma db push --force-reset"
   },
   "dependencies": {
     "@keystone-6/auth": "^6.0.0",
