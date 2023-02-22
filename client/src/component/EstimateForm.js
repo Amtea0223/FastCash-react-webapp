@@ -67,14 +67,14 @@ const EstimateForm = ({ content }) => {
       paymentMethod: paymentMethod,
       purpose: purpose,
       amount: amount,
-      // agreeTerms1: confirm1,
-      // timestamp: moment()
-      //   .utcOffset(8)
-      //   .format("YYYY-MM-DD HH:mm:ss"),
+      agreeTerms1: confirm1,
+      timestamp: moment()
+        .utcOffset(8)
+        .format("YYYY-MM-DD HH:mm:ss"),
     };
 
     try {
-      fetch(ENV + "/api/apply", {
+      fetch(ENV + "/api/v1/application", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

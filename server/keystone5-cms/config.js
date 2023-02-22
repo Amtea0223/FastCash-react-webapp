@@ -13,7 +13,7 @@ const setting = {
   adapter: {
     // mongoUri: process.env.MONGO_URL || `mongodb://localhost/${DB_NAME}`,
     mongoUri:      
-      "mongodb+srv://fastcashtech2023:<fastcash2023>@cluster1.4mqatu6.mongodb.net/?retryWrites=true&w=majority"
+      "mongodb+srv://fastcashtech2023:fastcash2023@cluster1.4mqatu6.mongodb.net/?retryWrites=true&w=majority"
   },
   staticPath: "/file",
   uploadPath: "public",

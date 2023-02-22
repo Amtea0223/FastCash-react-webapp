@@ -101,26 +101,23 @@ module.exports = (keystone) => {
     labelField: "Application Submission",
     labelResolver: (i) => i.fullName,
     fields: {
-      loanTarget: { type: Text },
-      phoneNumb: { type: Integer },
-      fullName: { type: Text },
-      idCard: { type: Text },
-      birthDate: { type: Text },
-      sex: { type: Text },
-      ammount: { type: Text },
-      occupation: { type: Text },
-      payMethod: { type: Text },
-      income: { type: Text },
-      submissionDate: {
-        type: CalendarDay,
-        dateFrom: "2022-01-01",
-        dateTo: "2100-01-01",
-      },
+      appliciantname: { type: Text },
+      phone: { type: Integer },
+      id: { type: Text },
+      paymentMethod: { type: Text },
+      purpose: { type: Text },
+      amount: { type: Text },
+      agreeTerms1: { type: Text },
+      // submissionDate: {
+      //   type: CalendarDay,
+      //   dateFrom: "2022-01-01",
+      //   dateTo: "2100-01-01",
+      // },     
       timestamp: { type: Text },
     },
     adminConfig: {
       defaultColumns:
-        "fullName, phoneNumb, loanTarget,ammount, idCard, birthDate,sex,occupation,payMethod,income,timestamp",
+        "appliciantname, phone, id,paymentMethod, purpose, amount,agreeTerms1,timestamp",
     },
     // List-level access controls
     access: {

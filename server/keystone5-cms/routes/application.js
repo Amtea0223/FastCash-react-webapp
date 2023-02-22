@@ -10,8 +10,6 @@ module.exports = (app, model) => {
       const body = req.body
       console.log(req)
       const data = pick(body, [
-        "phoneNumb",
-        "fullName",
         "appliciantname",
         "phone",
         "id",
