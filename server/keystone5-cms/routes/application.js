@@ -10,22 +10,21 @@ module.exports = (app, model) => {
       const body = req.body
       console.log(req)
       const data = pick(body, [
-        "loanTarget",
         "phoneNumb",
         "fullName",
-        "idCard",
-        "birthDate",
-        "sex",
-        "ammount",
-        "occupation",
-        "payMethod",
-        "income",
+        "appliciantname",
+        "phone",
+        "id",
+        "paymentMethod",
+        "purpose",
+        "amount",
+        "agreeTerms1",
         "timestamp",
       ])
       const applicationModel = model("ApplicationSubmission")
       submission = await new applicationModel({
         ...data,
-        submissionDate: moment().format("YYYY-MM-DD"),
+        // submissionDate: moment().format("YYYY-MM-DD"),
       }).save()
     } catch (err) {
       console.log(err)
