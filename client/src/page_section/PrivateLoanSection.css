@@ -32,6 +32,21 @@
     width: 40vw;
 }
 
+.applyArea-container{
+    background-image:url('../images/applybtn_bg.png');
+       background-repeat: no-repeat !important;
+       background-size: contain;
+       margin-top: -13rem;
+   }
+
+.applyArea{
+    width: 500px;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 .PrivateLoanSection1-right
@@ -45,16 +60,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+/* .PrivateLoanSection1-right-img
+{
+    width: 500px;
+    height: 390px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 1rem;
+    background-image:url('../images/applybtn_bg.png');
+    background-repeat: no-repeat !important;
+    background-size: contain;
+} */
 
-.PrivateLoanSection1-right img
+
+/* .PrivateLoanSection1-right img
 {
     position: absolute;
     transform: scale(0.7);
     top: -14rem;
-}
+} */
 
 .apply-btn-container
 {

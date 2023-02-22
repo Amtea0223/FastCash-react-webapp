@@ -17,6 +17,16 @@ const ApplyButton = styled(Button)({
   },
 });
 
+const applyArea =()=>(
+
+  <div className="applyArea-container">
+    <div className="applyArea">
+      <ApplyButton>立即申請</ApplyButton>
+    </div>
+  </div>
+)
+
+
 const PrivateLoanSection1 = ({ title, desc }) => {
   return (
     <div className="PrivateLoanSection1">
@@ -30,8 +40,7 @@ const PrivateLoanSection1 = ({ title, desc }) => {
           </div>
         </div>
         <div className="PrivateLoanSection1-right">
-          <img src={applybtn_bg}/>
-          <ApplyButton>立即申請</ApplyButton>
+          {applyArea()}
         </div>
       </div>
       <div className="PrivateLoanSection1-lower">

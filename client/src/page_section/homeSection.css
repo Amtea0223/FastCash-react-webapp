@@ -316,9 +316,10 @@
 
 .section5-main-content
 {
-  margin-top: 70px;
   display: flex;
-  margin-left: 30vh;
+  justify-content: center;
+  width: fit-content;
+  margin-left: 14rem;
 }
 
 .section5-main-img

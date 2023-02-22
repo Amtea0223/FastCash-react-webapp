@@ -24,7 +24,7 @@ const banner_style = {
             <div className="header" style={{ color: "#A2C43A" }}>
               {/* <span style={{color:"#A2C43A"}}> */}
               <h4>{name_ch}</h4>
-              <div class="line"></div>
+              <div className="line"></div>
             </div>
             <div className="mortgage-banner-content">
               <div className="mortgage-banner-body">
