@@ -35,7 +35,7 @@ const PrivateLoanSection1 = ({ title, desc }) => {
         </div>
       </div>
       <div className="PrivateLoanSection1-lower">
-          <img classname="square" src={square_bg}/>
+          <img className="square" src={square_bg}/>
           <div className="PrivateLoanSection1-lower-word">
             <span>註: 根據《放債人條例》年利率最高不超過48%。</span>
             <span>供款期由6個月至個120月常見還款例子:</span>
