@@ -1,10 +1,10 @@
-const DB_NAME = "letsgocms"
+const DB_NAME = "fastcashcms"
 
 // basic application setting
 const setting = {
   env: "localhost",
   domain: process.env.DOMAIN || "http://localhost:3000",
-  appName: "LET's GO CREDIT",
+  appName: "Fast Cash",
   cookieSecret:
     "u#G9vmhTw2EDm8_=+NZ=G+7#KjzUsu2-Dz-G5ybhdCNLj#@vfG2gjtX7pY@7afw$Dk&d4DDEsCv__dr+QZaV$8nY&AmekRexy%ZLaaFwumzMz_mqwgM^^5!Fm+8KV_-m",
   dbName: DB_NAME,
@@ -13,7 +13,7 @@ const setting = {
   adapter: {
     // mongoUri: process.env.MONGO_URL || `mongodb://localhost/${DB_NAME}`,
     mongoUri:      
-      "mongodb+srv://letsgoadmin:Letsgo2022@cluster0.9x6bdu6.mongodb.net/letsgocms?retryWrites=true&w=majority",
+      "mongodb+srv://fastcashtech2023:<fastcash2023>@cluster1.4mqatu6.mongodb.net/?retryWrites=true&w=majority"
   },
   staticPath: "/file",
   uploadPath: "public",
@@ -28,28 +28,28 @@ const setting = {
 const developmentSetting = {
   ...setting,
   env: "development",
-  domain: "http://35.221.197.174/",
+  domain: "http://35.221.132.33/",
 }
 
 const betaSetting = {
   ...setting,
   env: "beta",
   dev: false,
-  domain: "http://35.221.197.174/",
+  domain: "http://35.221.132.33/",
 }
 
 const uatSetting = {
   ...setting,
   env: "uat",
   dev: false,
-  domain: "http://35.221.197.174/",
+  domain: "http://35.221.132.33/",
 }
 
 const productionSetting = {
   ...setting,
   env: "production",
   dev: false,
-  domain: "http://35.221.197.174/",
+  domain: "http://35.221.132.33/",
   // domain: "https://backend.rmloan.com.hk/",
 }
 
