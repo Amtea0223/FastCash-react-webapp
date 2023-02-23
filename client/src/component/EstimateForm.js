@@ -238,7 +238,7 @@ const EstimateForm = ({ content }) => {
                 本人明白和同意，在此申請表提供的個人資料將記錄於資料系統作申請用途，在未獲得您同意前，不會向第三方披露你的個人資料。
               </label>
             </div>
-            <div className="mt-5 estimForm-btn">
+            <div className="mt-3 estimForm-btn">
               <SubmitButton
                 variant="contained"
                 onClick={ValidateData}

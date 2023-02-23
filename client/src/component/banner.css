@@ -101,6 +101,72 @@
   margin-left: 1rem;
 }
 
+/* Balance Transfer  */
+.balance-banner-title {
+  margin-top: 3rem;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius:50px;
+  width: 600px;
+  height: 500px;
+  /* justify-content: center; */
+  text-align: left;
+  margin-left: 53vw;
+}
+
+.balance-banner-title .balance-header
+{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 200px;
+  color: #A2C43A;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  text-indent: 3px;
+ 
+}
+
+.balance-banner-title .balance-header .balance-line {
+  height: 1px;
+  background: #77BF27;
+  height: 3px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+
+.balance-banner-title h4 {
+  display: inline-block;
+  color: #444444;
+  font-size: 35px;
+  font-weight: 400;
+  /* font-size: 2rem; */
+  letter-spacing: 6px;
+  text-indent: 3px;
+}
+.balance-banner-title .balance-body
+{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  place-content: center;
+}
+
+.balance-banner-title .balance-body .balance-item
+{
+  display: grid;
+  width: 18rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.balance-banner-title .balance-body .balance-item img
+{
+  transform: scale(0.75);
+}
 
 @media only screen and (max-width: 975px) {
   .banner-pic {
@@ -119,3 +185,4 @@
     margin: 0;
   }
 }
+
