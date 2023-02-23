@@ -8,7 +8,8 @@
     "start": "keystone start",
     "build": "keystone build",
     "postinstall": "keystone postinstall",
-    "destory":"keystone prisma db push --force-reset"
+    "destory":"keystone prisma db push --force-reset",
+    "prismag":"prisma generate"
   },
   "dependencies": {
     "@keystone-6/auth": "^6.0.0",
