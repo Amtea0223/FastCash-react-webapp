@@ -20,7 +20,7 @@ export default function NumberSlider({
         valueLabelDisplay='auto'
         max={max_value}
         sx={{
-          color: "#c59b6d",
+          color: "#29cb16c2",
         }}
         step={step_value}
         onChange={(e) => {
