@@ -1,3 +1,9 @@
+.caltor
+{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #E9EBE7;
+  padding: 0;
+}
 .caltor-header
 {
   height: 50px;
@@ -5,9 +11,15 @@
 
 .caltor-header > h3
 {
-  background-color: rgb(85, 179, 85);
+  background: transparent linear-gradient(265deg, #BEE643 0%, #96B732 100%) 0% 0% no-repeat padding-box;
   padding: 5px; 
   color: white;
+  height: 5rem;
+}
+
+.caltor-center
+{
+  margin-top: 5rem;
 }
 
 
@@ -21,6 +33,18 @@
 
 .caltor-item p {
   font-weight: bold;
+}
+
+.caltor-slider
+{
+  text-align: -webkit-center;
+  margin-top: 4rem;
+}
+
+.caltor-note
+{
+   justify-content: center;
+    display: flex;
 }
 
 .caltor-item .caltor-item-txtField
@@ -85,6 +109,8 @@
   margin-top: 20px;
   justify-content: center;  
 }
+
+
 
 @media only screen and (min-width: 1920px) {
 }

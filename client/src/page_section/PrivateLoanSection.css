@@ -1,6 +1,11 @@
-.PrivateLoanSection1
+
+
+.PrivateLoanSection1 
 {
-    
+    background-image: url(../images/component_section1_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
 }
 
 .PrivateLoanSection1-upper
@@ -94,7 +99,7 @@
 .PrivateLoanSection1-lower
 {
     display: flex;
-    height: 30vh;
+    height: 25rem;
     justify-content: center;
     position: relative;
 }

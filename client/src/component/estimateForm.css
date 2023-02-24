@@ -6,7 +6,7 @@
   grid-template-areas:
     "desc rule"
     "detail detail"; */
-  
+    padding: 1rem 3rem 3rem 3rem;
 }
 
 

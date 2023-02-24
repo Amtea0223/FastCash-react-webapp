@@ -11,7 +11,7 @@ export default function NumberSlider({
 }) {
 
   const isMobile = useMediaQuery({ query: "(max-width: 991px)" })
-  const style = isMobile?{width:"80%"}:{width:"100%", minWidth: "600px"}
+  const style = isMobile?{width:"80%"}:{width:"90%"}
   return (
     <Box sx={style}>
       <Slider
@@ -20,7 +20,7 @@ export default function NumberSlider({
         valueLabelDisplay='auto'
         max={max_value}
         sx={{
-          color: "#29cb16c2",
+          color: "#B5DB42",
         }}
         step={step_value}
         onChange={(e) => {
