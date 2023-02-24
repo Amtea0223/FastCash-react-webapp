@@ -48,7 +48,9 @@
 
 .section4_container
 {
-  height: 50rem;
+  background-image: url('./images/home/homebg4.png');
+  background-size: cover;
+  width: 100%;
 }
 
 .section5_container

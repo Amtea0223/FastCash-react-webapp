@@ -9,6 +9,7 @@ import Banner from "./component/Banner";
 import Footer from "./component/Footer";
 import { Helmet } from "react-helmet";
 import bg from "./images/privateLoan/bg.png";
+import square from './images/squaregp.png';
 
 const PrivateLoan = ({ content }) => {
   return (
@@ -18,6 +19,7 @@ const PrivateLoan = ({ content }) => {
         <meta name="description" content={content?.MT[0].metaDescription} />
         <meta name="keywords" content={content?.MT[0].metaKeywords} />
       </Helmet> */}
+      <img src={square} alt="" className="square-group" />
       <div className="PrivateLoan-section1-container">
         <Banner name={"Private Loan"} name_ch={"私人貸款"} bg_url={bg} />
       </div>

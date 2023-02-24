@@ -122,6 +122,16 @@ a:hover {
 }
 /** end input style**/
 
+
+.square-group{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: 99;
+  top: 67rem;
+  left: 10vw;
+}
+
 @media only screen and (min-width: 1200px) {
   .title-h1 {
     font-size: 2.5rem;

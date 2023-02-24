@@ -204,7 +204,7 @@ var keystone_default = withAuth(
       url: "file:./keystone.db"
     },
     server: {
-      cors: { origin: ["http://localhost:3001"], credentials: false },
+      cors: { origin: ["http://35.201.191.117"], credentials: false },
       extendExpressApp: (app, commonContext) => {
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({ extended: false }));

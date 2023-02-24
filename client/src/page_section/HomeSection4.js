@@ -2,10 +2,11 @@ import "./homeSection.css"
 import istockman from "../images/home/home_istockphoto.png"
 import CalculatorContent from "../component/CalculatorContent"
 import ApplicationBtn from "../component/ApplicationBtn"
+import bg from '../images/home/homebg4.png'
 
 const HomeSection4 = () => {
   return (
-    <div className="home-section4">
+    <div className="home-section4">      
       <div className="home-section4-container">
         <div className="home-section4-container-left">
           <div className="home-section4-container-left-description">

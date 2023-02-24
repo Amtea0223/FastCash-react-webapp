@@ -27,7 +27,7 @@ export default withAuth(
       url: 'file:./keystone.db',
     },
     server: {      
-      cors: { origin: ['http://localhost:3001'], credentials: false },
+      cors: { origin: ['*'], credentials: false },
       extendExpressApp: (app, commonContext) => {
         app.use(bodyParser.json())        
         app.use(bodyParser.urlencoded({ extended: false }))
@@ -43,3 +43,5 @@ export default withAuth(
     session,
   })
 );
+
+
