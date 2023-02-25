@@ -74,7 +74,7 @@ const EstimateForm = ({ content }) => {
     };
 
     try {
-      fetch(ENV + "/api/apply", {
+      fetch(ENV + "/rest/application", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

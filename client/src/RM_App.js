@@ -31,8 +31,8 @@ import Application from "./component/Application/Application"
 
 
 function App() {  
-  const { data } = useFetch(ENV + "/api/v1/content")
-  const post_result = useFetch(ENV + "/api/v1/post")
+  // const { data } = useFetch(ENV + "/api/v1/content")
+  // const post_result = useFetch(ENV + "/api/v1/post")
   const [showBottomNav, setShowBottomNav] = useState(true)
   // const gtag_link = data?.MT[14].description    
   // const gtag_dataLayer = data?.MT[15].description  

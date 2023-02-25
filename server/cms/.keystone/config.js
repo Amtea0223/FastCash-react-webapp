@@ -179,9 +179,12 @@ var session = (0, import_session.statelessSessions)({
 // routes/applyForm.ts
 async function postApplication(req, res) {
   const { context } = req;
-  const { name, phone, id, paymentMethod, purpose, amount } = req.body;
+  if (!req.body) {
+    return res.status(400).json({ error: "Request body is missing" });
+  }
+  const { name, phone, id, paymentMethod, purpose, amount } = req?.body;
   console.log(req.body);
-  const applications = await context.query.Application.createOne({
+  const apply = await context.db.Application.createOne({
     data: {
       name,
       phone,
@@ -189,14 +192,14 @@ async function postApplication(req, res) {
       paymethod: paymentMethod,
       reason: purpose,
       loanAmount: amount
-    },
-    query: "id name phone idCard paymethod reason loanAmount"
+    }
   });
-  res.status(201).json(applications);
+  res.status(201).json(apply);
 }
 
 // keystone.ts
 var bodyParser = require("body-parser");
+var cors = require("cors");
 var keystone_default = withAuth(
   (0, import_core3.config)({
     db: {
@@ -208,11 +211,11 @@ var keystone_default = withAuth(
       extendExpressApp: (app, commonContext) => {
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({ extended: false }));
-        app.use("/api", async (req, res, next) => {
+        app.post("/rest", async (req, res, next) => {
           req.context = await commonContext.withRequest(req, res);
           next();
         });
-        app.post("/api/apply", postApplication);
+        app.post("/rest/application", postApplication);
       }
     },
     lists,

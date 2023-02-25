@@ -33,9 +33,11 @@ import ApplyForm from "./component/ApplyForm"
 import Application from "./component/Application/Application"
 
 
-function App() {  
-  const { data } = useFetch(ENV + "/api/v1/content")
-  const post_result = useFetch(ENV + "/api/v1/post")
+function App() { 
+  const data = {} 
+  const post_result = {}
+  // const { data } = useFetch(ENV + "/api/v1/content")
+  // const post_result = useFetch(ENV + "/api/v1/post")
   const [showBottomNav, setShowBottomNav] = useState(true)
 
   const pathname = window.location.pathname;

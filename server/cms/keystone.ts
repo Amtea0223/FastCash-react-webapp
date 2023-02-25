@@ -15,6 +15,8 @@ import { lists } from './schema';
 import { withAuth, session } from './auth';
 import { postApplication } from './routes/applyForm';
 const bodyParser = require('body-parser');
+const cors  = require('cors');
+
 
 
 export default withAuth(
@@ -27,16 +29,18 @@ export default withAuth(
       url: 'file:./keystone.db',
     },
     server: {      
-      cors: { origin: ['*'], credentials: false },
+      cors: { origin: ['http://35.201.191.117'], credentials: false },
       extendExpressApp: (app, commonContext) => {
         app.use(bodyParser.json())        
         app.use(bodyParser.urlencoded({ extended: false }))
-        app.use('/api', async (req, res, next) => {
+        // app.get('/_version', (req, res) => {
+        //   res.send('v6.0.0-rc.2');
+        // });
+        app.post('/rest', async (req, res, next) => {
           (req as any).context = await commonContext.withRequest(req, res);
           next();
         });
-
-        app.post('/api/apply',postApplication);
+        app.post('/rest/application',postApplication);
       }
     },
     lists,
