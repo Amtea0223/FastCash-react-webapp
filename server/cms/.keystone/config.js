@@ -203,8 +203,12 @@ var cors = require("cors");
 var keystone_default = withAuth(
   (0, import_core3.config)({
     db: {
-      provider: "sqlite",
-      url: "file:./keystone.db"
+      provider: "postgresql",
+      url: "postgres://fastcash:12345678@localhost:5432/mydb",
+      onConnect: async (context) => {
+      },
+      enableLogging: true,
+      idField: { kind: "uuid" }
     },
     server: {
       cors: { origin: ["http://35.201.191.117"], credentials: false },

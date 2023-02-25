@@ -22,12 +22,20 @@ const cors  = require('cors');
 export default withAuth(
   config({
     db: {
-      // we're using sqlite for the fastest startup experience
-      //   for more information on what database might be appropriate for you
-      //   see https://keystonejs.com/docs/guides/choosing-a-database#title
-      provider: 'sqlite',
-      url: 'file:./keystone.db',
-    },
+    //   // we're using sqlite for the fastest startup experience
+    //   //   for more information on what database might be appropriate for you
+    //   //   see https://keystonejs.com/docs/guides/choosing-a-database#title
+    //   provider: 'sqlite',
+    //   url: 'file:./keystone.db',
+    
+    provider: 'postgresql',
+    url: 'postgres://fastcash:12345678@localhost:5432/mydb',
+    onConnect: async context => { /* ... */ },
+    // Optional advanced configuration
+    enableLogging: true,
+    idField: { kind: 'uuid' },
+    // shadowDatabaseUrl: 'postgres://fastcash:12345678@localhost:5432/shadowdb'
+  },
     server: {      
       cors: { origin: ['http://35.201.191.117'], credentials: false },
       extendExpressApp: (app, commonContext) => {
