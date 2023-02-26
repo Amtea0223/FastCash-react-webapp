@@ -28,6 +28,15 @@ export default withAuth(
       provider: 'sqlite',
       url: 'file:./keystone.db',
     },
+    // db: {
+    //   provider: 'postgresql',
+    //   url: 'postgres://admin:12345678@localhost:5432/fastdb',
+    //   onConnect: async context => { console.log("success fast") },
+    //   // Optional advanced configuration
+    //   // enableLogging: true,
+    //   // idField: { kind: 'uuid' },
+    //   // shadowDatabaseUrl: 'postgres://dbuser:dbpass@localhost:5432/shadowdb'
+    // },
     server: {      
       cors: { origin: ['http://35.201.191.117'], credentials: false },
       extendExpressApp: (app, commonContext) => {
