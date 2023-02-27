@@ -11,8 +11,7 @@ export default {
     {
       label: "Label Management",
       children: [
-        { listKey: "Block", label: "Content Block" },
-        // { listKey: "Card", label: "RichMore Card Content" },
+        { listKey: "Block", label: "Content Block" },        
         { listKey: "Menu", label: "Main Menu" },
         { listKey: "LoanServicePage", label: "Loan Service" },
         { listKey: "MT", label: "Meta Data" },
@@ -24,6 +23,7 @@ export default {
         { listKey: "Post", label: "Post" },
         // { listKey: "ValuationSubmission", label: "Valuation Submission" },
         { listKey: "ApplicationSubmission", label: "Application Submission" },        
+        { listKey: "InquirySubmission", label: "Inquiry Submission" },        
       ],
     },
   ],

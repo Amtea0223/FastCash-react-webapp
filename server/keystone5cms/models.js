@@ -52,9 +52,37 @@ module.exports = (keystone) => {
     { value: "valuation", label: "物業估價" },
     { value: "aboutus", label: "關於我們" },
     { value: "loanService", label: "貸款服務" },
-    { value: "loanProcess", label: "貸款步驟" },
-    // { value: "richMore", label: "為何選擇我們" },
+    { value: "loanProcess", label: "貸款步驟" },    
   ]
+  keystone.createList("InquirySubmission", {
+    labelField: "Inquiry Submission",
+    labelResolver: (i) => i.name,
+    fields: { 
+      name: { type: Text },      
+      phone: { type: Integer },      
+      email: { type: Text },
+      message: { type: Text,isMultiline:true },      
+      submissionDate: {
+        type: CalendarDay,
+        dateFrom: "2022-01-01",
+        dateTo: "2100-01-01",
+      },
+      timestamp: { type: Text },
+    },
+    adminConfig: {
+      defaultColumns:
+        "name, phone, email, message,timestamp",
+    },
+    // List-level access controls
+    access: {
+      read: access.userIsAdminOrOwner,
+      update: access.userIsAdminOrOwner,
+      create: access.userIsAdmin,
+      delete: access.userIsAdmin,
+      auth: true,
+    },
+  })
+
   keystone.createList("ApplicationSubmission", {
     labelField: "Application Submission",
     labelResolver: (i) => i.name,
