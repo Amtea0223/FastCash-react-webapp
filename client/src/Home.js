@@ -19,6 +19,7 @@ const Home = ({ content }) => {
     </Helmet>       */}
 
     <img src={square} alt="" className="square-group" />
+         
       <div className="section1_container section1_bg">
         <HomeSection1 />
       </div>

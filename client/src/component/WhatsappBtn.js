@@ -4,7 +4,7 @@ const WhatsappBtn = () => {
   return (
     <div className="wtsapp">
       <div className="wtsapp-container">
-        <a href="https://api.whatsapp.com/send/?phone=85293634203">
+        <a href="https://api.whatsapp.com/send/?phone=85212345678">
           <img className="wtsapp-icon" src={icon} alt="" />
         </a>
       </div>

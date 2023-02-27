@@ -38,7 +38,7 @@ export default withAuth(
     //   // shadowDatabaseUrl: 'postgres://dbuser:dbpass@localhost:5432/shadowdb'
     // },
     server: {      
-      cors: { origin: ['http://35.201.191.117'], credentials: false },
+      cors: { origin: ['http://localhost:3001'], credentials: false,exposedHeaders:['Access-Control-Allow-Origin'] },
       extendExpressApp: (app, commonContext) => {
         app.use(bodyParser.json())        
         app.use(bodyParser.urlencoded({ extended: false }))

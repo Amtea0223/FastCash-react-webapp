@@ -1,7 +1,9 @@
 "use strict";
+var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -15,6 +17,10 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // keystone.ts
@@ -177,14 +183,13 @@ var session = (0, import_session.statelessSessions)({
 });
 
 // routes/applyForm.ts
+var import_context = require("@keystone-6/core/context");
+var PrismaModule = __toESM(require(".prisma/client"));
 async function postApplication(req, res) {
-  const { context } = req;
-  if (!req.body) {
-    return res.status(400).json({ error: "Request body is missing" });
-  }
-  const { name, phone, id, paymentMethod, purpose, amount } = req?.body;
+  const context = (0, import_context.getContext)(keystone_default, PrismaModule);
+  const { name, phone, id, paymentMethod, purpose, amount } = req.body;
   console.log(req.body);
-  const apply = await context.db.Application.createOne({
+  const applications = await context.query.Application.createOne({
     data: {
       name,
       phone,
@@ -192,9 +197,10 @@ async function postApplication(req, res) {
       paymethod: paymentMethod,
       reason: purpose,
       loanAmount: amount
-    }
+    },
+    query: "id name phone idCard paymethod reason loanAmount"
   });
-  res.status(201).json(apply);
+  res.status(201).json(applications);
 }
 
 // keystone.ts
@@ -207,7 +213,7 @@ var keystone_default = withAuth(
       url: "file:./keystone.db"
     },
     server: {
-      cors: { origin: ["http://35.201.191.117"], credentials: false },
+      cors: { origin: ["http://34.125.26.126"], credentials: false, exposedHeaders: ["Access-Control-Allow-Origin"] },
       extendExpressApp: (app, commonContext) => {
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({ extended: false }));

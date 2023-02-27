@@ -2,7 +2,6 @@ import "./footer.css"
 import icon from "../images/logo.png"
 import { HashLink } from "react-router-hash-link"
 import { useMediaQuery } from "react-responsive"
-import { color } from "@mui/system"
 
 const Footer = () => {
   const isMobileTablet = useMediaQuery({ query: "(max-width: 1212px)" })

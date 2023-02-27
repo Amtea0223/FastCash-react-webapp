@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import "./App.css"
 import { BrowserRouter, Routes, Route  } from "react-router-dom"
 import useFetch from "./codeHelper/useFetch"
-import AboutUs from "./AboutUs"
+// import AboutUs from "./AboutUs"
 import NavBar from "./component/NavBar"
 import Home from "./Home"
 import LoanProcess from "./LoanProcess"
@@ -19,6 +19,8 @@ import OnlineLoan from "./LoanServicesPages/OnlineLoan"
 import PrivateLoan from "./PrivateLoan"
 import MortgageLoan from "./mortgageLoan/MortgageLoan"
 import BalanceTransfer from "./balanceTransfer/BalanceTransfer"
+import AboutUs from "./pages/AboutUs"
+import Contact from "./pages/Contact"
 
 // import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.min.css"
@@ -67,7 +69,7 @@ function App() {
       <div className="App">
         {/* <ToastContainer autoClose={10000} hideProgressBar /> */}
         {/* <ReactChatbot /> */}
-        {/* <FloatBtnList /> */}
+        <FloatBtnList />
         {/* {showBottomNav && (
           <ApplicationBtn
             isBottomNav={true}
@@ -107,12 +109,12 @@ function App() {
           <Route
             exact
             path="/about"
-            element={<PrivateLoan content={data} />}
-          />
+            element={<AboutUs content={data} />}
+          />          
           <Route
             exact
             path="/contact"
-            element={<PrivateLoan content={data} />}
+            element={<Contact content={data} />}
           />
           
           {/* <Route
