@@ -71,6 +71,7 @@
   display: flex;
   /* justify-content: center; */
   width: 100%;
+  max-width: 1920px;
 }
 
 .home-section2-container-left
@@ -92,13 +93,52 @@
   margin-left: -13rem; */
 }
 
+@media only screen and (max-width: 1440px)  {
+
+  .calculator {
+    width: fit-content;
+    /* margin-left: 70rem; */
+    /* align-self: center; */
+    margin-top: 220px;
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1441px) {
+
+  .calculator {
+    width: fit-content;
+    /* margin-left: 70rem; */
+    /* align-self: center; */
+    margin-top: 220px;
+    margin-left: 15vw;
+  }
+  
+}
+
+@media only screen and (min-width: 1921px) {
+
+  .calculator {
+    width: fit-content;
+    /* margin-left: 70rem; */
+    /* align-self: center; */
+    margin-top: 220px;
+    margin-left: 15vw;
+  }
+  
+}
+
+
+
+
 .calculator {
-  width: fit-content;
+  /* width: fit-content; */
   /* margin-left: 70rem; */
   /* align-self: center; */
-  margin-top: 220px;
-  margin-left: 5rem;
+  /* margin-top: 220px;
+  margin-left: 20vw; */
 }
+
 
 .calculator-box {
   width: 69vw;
@@ -259,12 +299,30 @@
   margin-bottom: 70px;
 }
 
-.home-section4-container-right img {
-  transform: scale(0.6);
-  position: absolute;
-  margin-left: -15rem;
-  top: -9rem;
+@media only screen and (max-width: 1440px)  {
+
+  .home-section4-container-right img {
+    transform: scale(0.6);
+    position: absolute;
+    margin-left: -15rem;
+    top: -9rem;
+  }
 }
+
+
+@media only screen and (max-width: 1920px) and (min-width: 1441px) {
+
+  .home-section4-container-right img {
+    transform: scale(0.6);
+    position: absolute;
+    margin-left: 5rem;
+    top: -9rem;
+  }
+
+}
+
+
+
 .home-section4-container-right
 {
   display: flex;
@@ -350,13 +408,27 @@
   background-position: right 0;
 }
 
+/* @media only screen and (max-width: 1440px) {
+  .section5-main-content
+  {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-left: 15rem;
+  }
+} */
+
+
 .section5-main-content
-{
-  display: flex;
-  justify-content: center;
-  width: fit-content;
-  margin-left: 15rem;
-}
+  {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-left: 20vw;
+  }
+
+
+
 
 .section5-main-img
 {

@@ -29,11 +29,11 @@ const Footer = () => {
   const commonLink_list = [
     {
       title: "貸款迷思",
-      url: "/privateLoan",
+      url: "/question",
     },
     {
       title: "聯絡我們",
-      url: "/privateLoan",
+      url: "/contact",
     },
     {
       title: "免責聲明",
@@ -61,11 +61,11 @@ const Footer = () => {
     },
     {
       title: "按揭及業主貸款",
-      url: "/privateLoan",
+      url: "/mortgage",
     },
     {
       title: "結餘轉戶",
-      url: "/privateLoan",
+      url: "/balance",
     },
     {
       title: "申請表格",
@@ -108,7 +108,7 @@ const Footer = () => {
           <div className="ft2">
             <p>FAST CASH 快易錢</p>
             <p>放債人牌照號碼： 1726/2021</p>
-            <p>This is Address</p>
+            <p>尖沙咀山林道4號恒貿商業中心9樓3室</p>
             <a href="tel:2682-8668">
               <p>查詢電話：+852 2887 7002</p>
             </a>
