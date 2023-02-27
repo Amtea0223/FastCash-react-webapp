@@ -8,6 +8,7 @@ const PostRoutes = require("./post")
 const ContentRoutes = require("./content")
 const VoluationRoutes = require("./valuation")
 const ApplicationRoutes = require("./application")
+const InquiryRoutes = require("./inquiry")
 
 const crosOptions = config.CROS || {
   origin: true,
@@ -25,6 +26,7 @@ module.exports = (keystone, app) => {
 
   PostRoutes(app, model)
   ApplicationRoutes(app, model)
+  InquiryRoutes(app, model)
   VoluationRoutes(app, model)
   ContentRoutes(app, model)
 }

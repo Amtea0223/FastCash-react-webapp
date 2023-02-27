@@ -22,6 +22,9 @@ const setting = {
   adapter: {
     // mongoUri: process.env.MONGO_URL || `mongodb://localhost/${DB_NAME}`,
     mongoUri:
+    //ori url
+      // "mongodb+srv://letsgoadmin:Letsgo2022@cluster0.9x6bdu6.mongodb.net/letsgocms?retryWrites=true&w=majority",
+      //test url
       "mongodb+srv://letsgoadmin:Letsgo2022@cluster0.9x6bdu6.mongodb.net/fccms?retryWrites=true&w=majority",
       // "mongodb+srv://fastcashtech2023:fastcash2023@cluster1.4mqatu6.mongodb.net/fastcashcms?retryWrites=true&w=majority",
   },

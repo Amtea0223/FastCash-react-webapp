@@ -22,7 +22,7 @@ const AboutUs = ({ content }) => {
     <img src={bg} alt="" width={"100%"} />
         
     </div>
-
+ 
     <div className={css.content}>
       <img src={circle_logo} alt="" width={"300px"} className="mb-5"/>      
       <h1>致力為客戶提供專業的多元化貸款服務</h1>      

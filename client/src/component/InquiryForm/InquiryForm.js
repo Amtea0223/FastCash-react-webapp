@@ -4,9 +4,10 @@ import TextField from "@mui/material/TextField";
 import Box from '@mui/material/Box';
 import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
-
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+import moment from "moment";
+import { ENV } from '../../config';
+
 
 function InquiryForm() {
   const [name, setName] = useState('');
@@ -14,9 +15,46 @@ function InquiryForm() {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    
+  const CleanData = () => {
+    setName("")
+    setPhone("")
+    setEmail("")
+    setMessage("")
+  };
+
+  const handleSubmit = () => {
+    const data = {
+      name: name,
+      phone: phone,
+      email: email,
+      message: message,
+      timestamp: moment()
+        .utcOffset(8)
+        .format("YYYY-MM-DD HH:mm:ss"),
+    };
+
+    try {
+      fetch(ENV + "/api/v1/inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+        .then((res) => {
+          if (res.ok) {            
+          }
+          
+        })
+        .catch((err) => {
+          console.log(err.message);
+        })
+        .finally(() => {
+          CleanData();
+        });
+    } catch (error) {
+      
+    }finally{
+      CleanData();
+    }    
   };
 
   const SubmitButton = styled(Button)({
@@ -30,13 +68,7 @@ function InquiryForm() {
     },
   });
 
-  const Item = styled(Paper)(({ theme }) => ({
-    // backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
+
 
   return (
     <div className={css.container}>
