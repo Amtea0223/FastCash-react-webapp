@@ -1,0 +1,74 @@
+.container{
+
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+    
+
+}
+
+.banner h1{
+   
+    color:white;
+    font-size: 2.8rem;   
+    text-shadow: rgb(165, 165, 165) 1px 0 10px; 
+    z-index: 99;
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.banner img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    clip-path: polygon(0 0, 100% 1%, 100% 56%, 0 83%);
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;    
+    width: 100%;    
+    margin-top:5rem;
+    align-items: center;
+}
+
+.content_container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+   
+}
+
+.content h1{
+    color:#A2C43A;
+    padding-bottom: 1rem;    
+}
+
+.content h5{
+    max-width: 600px;
+}
+
+.bg_square{
+    width: 900px;
+    position: absolute;
+    top:55rem;
+    z-index: -1;
+
+}
+
+.inquiryForm{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    
+    
+        
+    }
+

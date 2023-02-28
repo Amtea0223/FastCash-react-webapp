@@ -21,7 +21,7 @@ import MortgageLoan from "./mortgageLoan/MortgageLoan"
 import BalanceTransfer from "./balanceTransfer/BalanceTransfer"
 import AboutUs from "./pages/AboutUs"
 import Contact from "./pages/Contact"
-
+import Application from "./pages/Application"
 // import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.min.css"
 import chatbot_icon from "./component/chatbot/chatbotman.png"
@@ -32,7 +32,7 @@ import Ordinance from "./Ordinance"
 import ReactChatbot from "./component/chatbot/ReactChatbot"
 import { ENV } from "./config"
 import ApplyForm from "./component/ApplyForm"
-import Application from "./component/Application/Application"
+// import Application from "./component/Application/Application"
 
 
 function App() { 
@@ -115,6 +115,12 @@ function App() {
             exact
             path="/contact"
             element={<Contact content={data} />}
+          />
+
+          <Route
+            exact
+            path="/application"
+            element={<Application content={data} />}
           />
           
           {/* <Route

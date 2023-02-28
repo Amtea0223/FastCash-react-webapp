@@ -1,10 +1,10 @@
-import "./footer.css"
-import icon from "../images/logo.png"
-import { HashLink } from "react-router-hash-link"
-import { useMediaQuery } from "react-responsive"
-
+import "./footer.css";
+import icon from "../images/logo.png";
+import { HashLink } from "react-router-hash-link";
+import { useMediaQuery } from "react-responsive";
+import logo from "../images/FC-logo.png";
 const Footer = () => {
-  const isMobileTablet = useMediaQuery({ query: "(max-width: 1212px)" })
+  const isMobileTablet = useMediaQuery({ query: "(max-width: 1212px)" });
 
   //original
   // const commonLink_list = [
@@ -25,8 +25,7 @@ const Footer = () => {
   //     url: "/ordinance",
   //   },
   // ]
-
-  const commonLink_list = [
+  const commonLink1_list = [
     {
       title: "貸款迷思",
       url: "/question",
@@ -35,6 +34,9 @@ const Footer = () => {
       title: "聯絡我們",
       url: "/contact",
     },
+  ];
+
+  const commonLink2_list = [
     {
       title: "免責聲明",
       url: "/privateLoan",
@@ -51,8 +53,7 @@ const Footer = () => {
       title: "放債人條例",
       url: "/privateLoan",
     },
-  ]
-
+  ];
 
   const loanServices_list = [
     {
@@ -69,9 +70,9 @@ const Footer = () => {
     },
     {
       title: "申請表格",
-      url: "/privateLoan",
+      url: "/application",
     },
-  ]
+  ];
 
   return (
     <div className="footer">
@@ -80,12 +81,12 @@ const Footer = () => {
           {/* <div className="ft1">
             <img className="footer-icon" src={icon} alt="" />
           </div> */}
+          <img className="footer-logo" src={logo} alt="" />
           <div className="ft1">
-            
-            <div style={{marginleft:"122px"}}>
+            <div  style={{ marginleft: "122px" }}>
               {/* <p>常用連結</p> */}
               {loanServices_list.map((item, index) => (
-                <div key={index} className="mt-3">
+                <div key={index} className="mt-3 ft1-loanservices">
                   <HashLink smooth to={item.url}>
                     {item.title}
                   </HashLink>
@@ -94,7 +95,14 @@ const Footer = () => {
             </div>
 
             <div style={{ marginLeft: "122px" }}>
-              {commonLink_list.map((item, index) => (
+              {commonLink1_list.map((item, index) => (
+                <div key={index} className="mt-3 ft1-commonLink1">
+                  <HashLink smooth to={item.url}>
+                    {item.title}
+                  </HashLink>
+                </div>
+              ))}
+              {commonLink2_list.map((item, index) => (
                 <div key={index} className="mt-3">
                   <HashLink smooth to={item.url}>
                     {item.title}
@@ -102,26 +110,30 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-
           </div>
 
           <div className="ft2">
-            <p>FAST CASH 快易錢</p>
-            <p>放債人牌照號碼： 1726/2021</p>
-            <p>尖沙咀山林道4號恒貿商業中心9樓3室</p>
+            <p style={{color:"#77bf27"}}>FAST CASH 快易錢</p>
+            <span>放債人牌照號碼： 1726/2021</span>
+            <span>尖沙咀山林道4號恒貿商業中心9樓3室</span>
+            {/* <p>放債人牌照號碼： 1726/2021</p> */}
+            {/* <p>尖沙咀山林道4號恒貿商業中心9樓3室</p> */}
             <a href="tel:2682-8668">
-              <p>查詢電話：+852 2887 7002</p>
+              <span>查詢電話：+852 2887 7002</span>
             </a>
             <a href="tel:9363-4203">
-              <p> WhatsApp：+852 5647 2394</p>
+              <span> WhatsApp：+852 5647 2394</span>
             </a>
           </div>
 
           <div className="ft3">
             <p>備註</p>
-            <p>FAST CASH 快易錢還款期為6至60個月之間的私人貸款。實際
-                年利率介乎 3%至 48%，將視乎個別情況而定。以下為參考例子：假如你的貸款額為$50,000
-                ，還款期12個月，實際年利率(APR)3.8%，那每月還款額應為 HK$4,253，而總還款額則是HK$51,036
+            <p>
+              FAST CASH 快易錢還款期為6至60個月之間的私人貸款。實際 年利率介乎
+              3%至
+              48%，將視乎個別情況而定。以下為參考例子：假如你的貸款額為$50,000
+              ，還款期12個月，實際年利率(APR)3.8%，那每月還款額應為
+              HK$4,253，而總還款額則是HK$51,036
             </p>
           </div>
           <div className="ft4">
@@ -155,7 +167,7 @@ const Footer = () => {
           <div className="footer-link-mob">
             <div className="d-flex flex-column">
               <p className="footer-header-mob">常用連結</p>
-              {commonLink_list.map((item, index) => (
+              {commonLink2_list.map((item, index) => (
                 <div key={index} className="mt-3 text-center">
                   <HashLink smooth to={item.url}>
                     {item.title}
@@ -190,7 +202,7 @@ const Footer = () => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

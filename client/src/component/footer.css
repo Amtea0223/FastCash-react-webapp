@@ -3,18 +3,24 @@
   background-color: #EEEEEE;
   width: 100%;
   height: 45vh;
-
   display: flex;
   justify-content: center;
   
 }
 
+.footer-logo
+{
+  position: absolute;
+  margin-top: 19rem;
+}
+
 .footer p,
 .footer h5,
 .footer a {
-  color: "#444444";
-  text-decoration: none;
-  font-size: 1rem;
+  color: "#444444" ; 
+  text-decoration: none ;
+  /* font-size: 1rem ;
+  font-weight: 100 ; */
 }
 
 .footer-icon {  
@@ -42,11 +48,24 @@
 {
   color: #444444;
 }
+
+.ft1 .ft1-loanservices a, .ft1 .ft1-commonLink1 a
+{
+  font-size:x-large;
+}
+
 .ft2 {
   grid-area: address;
   display: flex;
   flex-direction: column;
 }
+
+.ft2 P,.ft2 span {
+  font-size:larger;
+}
+
+
+
 .ft2 a {
   text-decoration: none;
   color: #444444;
@@ -64,6 +83,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.ft4 p 
+{
+  font-size: larger;
 }
 
 .ft5 {

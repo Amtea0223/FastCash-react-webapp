@@ -38,7 +38,7 @@
 .caltor-slider
 {
   text-align: -webkit-center;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .caltor-note
@@ -104,10 +104,16 @@
   flex-direction: column;
 }
 
-.caltor-appy-btn {  
+/* .caltor-appy-btn {  
   display: flex;
   margin-top: 20px;
   justify-content: center;  
+} */
+
+.caltor-payment
+{
+  color: #9CC51D;
+  font-size: 4rem;
 }
 
 
