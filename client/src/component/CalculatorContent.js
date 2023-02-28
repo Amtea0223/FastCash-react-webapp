@@ -46,8 +46,6 @@ const CalculatorContent = () => {
   useEffect(() => {
     let P = principal;
     let t = period;
-    console.log("t:", t);
-    console.log("P:", P);
     let i = 0.3 / 12;
     let result = 0;
 
