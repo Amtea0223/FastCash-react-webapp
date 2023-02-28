@@ -4,17 +4,18 @@ import NumberSlider from "./NumberSlider";
 import TextField from "@mui/material/TextField";
 import ApplicationBtn from "./ApplicationBtn";
 import { Input, InputAdornment } from "@mui/material";
-import { width } from "@mui/system";
 
-const CalculatorContent = () => {
-  // const [amount, setAmount] = useState(0)
+
+const CalculatorContent = () => {  
   const [principal, setPrincipal] = useState(0);
   const [period, setPeriod] = useState(0);
   const [monthlyPay, setMonthlyPay] = useState(0);
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState(0);
+  const [sliderAmount, setSliderAmount] = useState(0);  
   const [focused, setFocused] = useState(false);
 
   const HandleAmount = (value) => {
+    setSliderAmount(value)
     setPrincipal(value);
     FormatMoney(value);
   };
@@ -96,6 +97,7 @@ const CalculatorContent = () => {
             max_value={500000}
             step_value={1000}
             setChangedValue={HandleAmount}
+            changedValue ={sliderAmount}
           />
         </div>
 

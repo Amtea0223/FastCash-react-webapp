@@ -8,6 +8,7 @@ export default function NumberSlider({
   max_value,
   step_value,
   setChangedValue,
+  changedValue,
 }) {
 
   const isMobile = useMediaQuery({ query: "(max-width: 991px)" })
@@ -15,6 +16,7 @@ export default function NumberSlider({
   return (
     <Box sx={style}>
       <Slider
+        value={changedValue}
         defaultValue={0}
         aria-label='Default'
         valueLabelDisplay='auto'
