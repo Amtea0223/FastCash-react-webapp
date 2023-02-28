@@ -4,6 +4,13 @@
   margin-right: 14vw;
 }
 
+.balance-banner-pic
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
 .banner-btn-apply {
   background-color: #212529;
   width: 180px;
@@ -102,35 +109,38 @@
 }
 
 /* Balance Transfer  */
-@media only screen and (max-width: 1440px)  {
+.balance-banner-title
+{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius:50px;
+}
+
+@media only screen and (max-width: 1920px)  {
   .balance-banner-title {
     margin-top: 3rem;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius:50px;
+
     width: 600px;
     height: 500px;
     /* justify-content: center; */
     text-align: left;
-    margin-left: 53vw;
+    margin-right: 3rem;
   }
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 1441px) {
+@media only screen and (max-width: 1440px)  {
   .balance-banner-title {
     margin-top: 3rem;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius:50px;
     width: 600px;
     height: 500px;
     /* justify-content: center; */
     text-align: left;
-    margin-left: 65vw;
+    margin-right: 3rem;
   }
 }
+
+
 
 
 .balance-banner-title .balance-header
