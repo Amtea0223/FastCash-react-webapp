@@ -137,7 +137,8 @@ const Footer = () => {
             </p>
           </div>
           <div className="ft4">
-            <p>忠告：借錢梗要還，咪俾錢中介</p>
+            <span style={{fontSize:"20px"}}>忠告：借錢梗要還，咪俾錢中介</span>
+            <p>© Copyright© 快易錢 Fast Profit Finance Ltd. All Rights Reserved.</p>
             {/* <div className="footer-statement">
               <p>註: 根據《放債人條例》年利率最高不超過48厘。</p>
               <p>供款期由6個月至個120月常見還款例子:</p>

@@ -23,31 +23,31 @@ const banner_style = {
           <div className="balance-banner-title">
             <div className="balance-header" style={{ color: "#A2C43A" }}>
               {/* <span style={{color:"#A2C43A"}}> */}
-              <h4>{name_ch}</h4>
+              <h1>{name_ch}</h1>
               <div className="balance-line"></div>
             </div>
             <div className="balance-banner-content">
               <div className="balance-body">
                 <div className="balance-item">
                   <img src={icon1} alt=""></img>
-                  <h4>彈性靈活</h4>
+                  <span className="balance-item-title">彈性靈活</span>
                   <span>隨意自選，想點清? 自己揀</span>
                 </div>
                 <div className="balance-item">
                   <img src={icon2} alt=""></img>
-                  <h4>省時方便</h4>
+                  <span className="balance-item-title">省時方便</span>
                   <span>不限一筆清貸款額，即日取款</span>
                 </div>
               </div>
               <div className="balance-body">
                 <div className="balance-item">
                   <img src={icon3} alt=""></img>
-                  <h4>專業快捷</h4>
+                  <span className="balance-item-title">專業快捷</span>
                   <span>專業分析客戶需求，即時提供多項方案。</span>
                 </div>
                 <div className="balance-item">
                   <img src={icon4} alt=""></img>
-                  <h4>集中還款</h4>
+                  <span className="balance-item-title">集中還款</span>
                   <span>一筆清最高達月薪10倍</span>
                 </div>
               </div>

@@ -87,6 +87,16 @@
   justify-items: center;
 }
 
+.banner-content .body .item span
+{
+  font-size: 25px;
+}
+
+.banner-content .body .item img
+{
+  transform: scale(0.7);
+}
+
 /* Mortgage Loan  */
 
 .mortgage-banner-content .mortgage-banner-content-body
@@ -95,17 +105,28 @@
   flex-direction: column;
 }
 
+.mortgage-banner-body
+{
+  margin-top: 3rem;
+}
 
 .mortgage-banner-body-item
 {
   margin-left: 3rem;
   width: 500px;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
+
+.mortgage-banner-body-item img
+{
+  transform: scale(0.7);
+}
+
 
 .mortgage-banner-body-item span
 {
   margin-left: 1rem;
+  font-size: 25px;
 }
 
 /* Balance Transfer  */
@@ -140,9 +161,6 @@
   }
 }
 
-
-
-
 .balance-banner-title .balance-header
 {
   margin-top: 50px;
@@ -164,10 +182,10 @@
 }
 
 
-.balance-banner-title h4 {
+.balance-banner-title .balance-item-title {
   display: inline-block;
   color: #444444;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 400;
   /* font-size: 2rem; */
   letter-spacing: 6px;
@@ -191,9 +209,9 @@
   justify-items: center;
 }
 
-.balance-banner-title .balance-body .balance-item img
+.balance-banner-title .balance-banner-content .balance-body .balance-item img
 {
-  transform: scale(0.75);
+  transform: scale(0.6);
 }
 
 @media only screen and (max-width: 975px) {

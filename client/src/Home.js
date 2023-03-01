@@ -1,5 +1,6 @@
 import "./home.css"
 import HomeSection1 from "./page_section/HomeSection1"
+import { useEffect } from "react"
 import WhyChoose from "./component/WhyChoose"
 import HomeSection2 from "./page_section/HomeSection2"
 import HomeSection3 from "./page_section/HomeSection3"
@@ -10,6 +11,10 @@ import HomeSection5 from "./page_section/HomeSection5"
 import square from './images/squaregp.png'
 
 const Home = ({ content }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home-container">
        {/* <Helmet>

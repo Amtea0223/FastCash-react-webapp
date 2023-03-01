@@ -51,6 +51,25 @@
   justify-content: center; */
 }
 
+@media only screen and (max-width: 1920px)  {
+.calculator-dot-bg
+{
+  position: absolute;
+  width: 700px;
+   left: 57vw;
+}
+}
+
+@media only screen and (max-width: 1440px)  {
+  .calculator-dot-bg
+  {
+    position: absolute;
+    width: 700px;
+    left: 45vw;
+  }
+  }
+  
+
 /* .home-section2-title span
 {
   color: #9DD75E;
@@ -156,6 +175,13 @@
   /* margin-left: 50rem; */
 }
 
+.calculator-dot-bg
+{
+  position: absolute;
+  /* transform: rotate(180deg); */
+  z-index: -1;
+}
+
 /*end*/
 
 /* Section 3 */
@@ -255,7 +281,7 @@
   display: flex;
   flex-direction: row;
   height: 80vh;
-  padding-top: 13rem;
+  padding-top: 3rem;
 }
 
 .home-section4-container-left
@@ -450,6 +476,7 @@
 {
   margin-top: 50px;
   margin-left: 2rem;
+  color: #444444;
 }
 .section5-main-word p{
   margin-top: 30px;
