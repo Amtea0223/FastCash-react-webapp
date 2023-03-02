@@ -82,8 +82,8 @@ const Footer = () => {
             <img className="footer-icon" src={icon} alt="" />
           </div> */}
           <img className="footer-logo" src={logo} alt="" />
-          <div className="ft1">
-            <div  style={{ marginleft: "122px" }}>
+          <div className="ft1" >
+            <div  style={{ marginleft: "90px" }}>
               {/* <p>常用連結</p> */}
               {loanServices_list.map((item, index) => (
                 <div key={index} className="mt-3 ft1-loanservices">
@@ -94,7 +94,7 @@ const Footer = () => {
               ))}
             </div>
 
-            <div style={{ marginLeft: "122px" }}>
+            <div style={{ marginLeft: "90px" }}>
               {commonLink1_list.map((item, index) => (
                 <div key={index} className="mt-3 ft1-commonLink1">
                   <HashLink smooth to={item.url}>
@@ -103,7 +103,7 @@ const Footer = () => {
                 </div>
               ))}
               {commonLink2_list.map((item, index) => (
-                <div key={index} className="mt-3">
+                <div key={index} className="mt-3 ft1-commonLink2">
                   <HashLink smooth to={item.url}>
                     {item.title}
                   </HashLink>

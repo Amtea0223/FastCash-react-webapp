@@ -4,30 +4,40 @@ import "./PrivateLoanSection.css";
 import AppyBtn from "../component/ApplyBtn";
 import square_bg from "../images/square_bg.png";
 import applybtn_bg from "../images/applybtn_bg.png";
+import { Link, useNavigate } from "react-router-dom"
+
+
 
 const ApplyButton = styled(Button)({
   color:"#FFF",
-  backgroundColor: "#77BF27",
+  backgroundColor: "#A2C43A",
   width: "166px",
   height: "71px",
   fontSize: "24px",
   fontWeight: "bold",
+  borderRadius:"22px",
   "&:hover": {
-    backgroundColor: "#707070",
+    backgroundColor: "#A2C43A",
   },
 });
+
+
+
+
+
 
 const applyArea =()=>(
 
   <div className="applyArea-container">
     <div className="applyArea">
-      <ApplyButton>立即申請</ApplyButton>
+      <ApplyButton >立即申請</ApplyButton>
     </div>
   </div>
 )
 
 
 const PrivateLoanSection1 = ({ title, desc }) => {
+  const navigate = useNavigate();
   return (
     <div className="PrivateLoanSection1">
       <div className="PrivateLoanSection1-upper">

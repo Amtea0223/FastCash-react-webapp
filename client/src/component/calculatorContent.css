@@ -13,6 +13,8 @@
 {
   background: transparent linear-gradient(265deg, #BEE643 0%, #96B732 100%) 0% 0% no-repeat padding-box;
   padding: 5px; 
+  padding-top: 1.3rem;
+  padding-left: 1rem;
   color: white;
   height: 5rem;
 }

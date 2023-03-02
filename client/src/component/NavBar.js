@@ -66,7 +66,7 @@ const NavBar = ({ content, postData, props }) => {
               <NavDropdown.Divider />
               <Nav.Link href="/mortgage">按揭及業主貸款</Nav.Link>
               <Nav.Link href="/balance">結餘轉戶</Nav.Link>
-              <Nav.Link href="/question">貸款迷思</Nav.Link>
+              <Nav.Link href={"/hottopics/" + blogPostOrdering + "/" + String(blogPostTitle).replace(/\s/g, "")}>貸款迷思</Nav.Link>
               <Nav.Link href="/about">關於 FAST CASH</Nav.Link>
               <Nav.Link href="/contact">聯絡我們</Nav.Link>
               <Nav.Link href="https://fastcash-proj.web.app/">登入</Nav.Link>

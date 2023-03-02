@@ -11,7 +11,7 @@
 .footer-logo
 {
   position: absolute;
-  margin-top: 20rem;
+  margin-top: 18rem;
 }
 
 .footer p,
@@ -52,6 +52,12 @@
 .ft1 .ft1-loanservices a, .ft1 .ft1-commonLink1 a
 {
   font-size:x-large;
+  font-family:"pingfangBold" !important;
+}
+
+.ft1 .ft1-commonLink2 a
+{
+  font-size: 20px;
 }
 
 .ft2 {
