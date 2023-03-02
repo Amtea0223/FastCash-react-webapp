@@ -12,7 +12,8 @@ const banner_style = {
   backgroundRepeat: 'no-repeat',
   backgroundPosition:'center',
   width:'100%',
-  height:'150vh',
+  height: "95vh",
+  clipPath:"polygon(0 0, 100% 1%, 100% 56%, 0 83%)",
 }
 
 

@@ -18,7 +18,7 @@ const Contact = ({ content }) => {
       <img src={square} alt="" className={css.bg_square} />
       <div className={css.banner}>
         <h1>聯絡我們</h1>
-        <img src={bg} alt="" width={"100%"} />
+        {/* <img src={bg} alt="" width={"100%"} /> */}
       </div>
 
       <div className={css.content}>

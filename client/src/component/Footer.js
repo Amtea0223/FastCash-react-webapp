@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
 
           <div className="ft2">
-            <p style={{color:"#77bf27"}}>FAST CASH 快易錢</p>
+            <p style={{color:"#A2C43A", paddingTop:"15px"}}>FAST CASH 快易錢</p>
             <span>放債人牌照號碼： 1726/2021</span>
             <span>尖沙咀山林道4號恒貿商業中心9樓3室</span>
             {/* <p>放債人牌照號碼： 1726/2021</p> */}

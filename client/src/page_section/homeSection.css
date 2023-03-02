@@ -186,8 +186,7 @@
 
 /* Section 3 */
 .home-section3 {
-  margin-top: 2rem;
-  padding-top: 16rem;
+
 }
 
 .estimateForm-bg
@@ -293,7 +292,7 @@
 }
 
 .home-section4-container-left h1{
-  color: #42cf60 !important;
+  color: #9DD75E !important;
   margin-bottom: 30px;
 }
 
@@ -318,7 +317,7 @@
 
 .home-section4-container-left h2 span
 {
-  color: #4be76c !important;
+  color: #9DD75E !important;
 }
 
 .home-section4-container-left-description
@@ -506,7 +505,9 @@
 
 .section5-main-btn img
 {
-  transform: scaleY(0.5);
+  height: 20px;
+    width: 35px;
+  align-self: center;
   margin-right: 1rem;
 }
 

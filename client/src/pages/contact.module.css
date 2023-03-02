@@ -26,9 +26,10 @@
 .banner img{
     display: block;
     max-width: 100%;
-    height: auto;
-    clip-path: polygon(0 0, 100% 1%, 100% 56%, 0 83%);
-
+    height: 25rem;
+    background-image: url("../images/contact/contact_us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content{
