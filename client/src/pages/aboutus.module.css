@@ -1,33 +1,48 @@
-.container{
-
+.banner h1{
+ 
 }
 
 .banner{
+
+    background: url('../images/aboutus/aboutus_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+    height: 20rem;
     position: relative;
-    text-align: center;
+    display: flex;
+    place-content: center;
 
 }
+
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+
+}
+
+
+
+
+
 
 .banner h1{
    
     color:white;
     font-size: 2.8rem;   
     text-shadow: rgb(165, 165, 165) 1px 0 10px; 
-    z-index: 99;
-
+        
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top:35%;
     
-}
-
-.banner img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    clip-path: polygon(0 0, 100% 1%, 100% 56%, 0 83%);
-
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 17px;
+    padding: 2rem;
+    
 }
 
 .content{

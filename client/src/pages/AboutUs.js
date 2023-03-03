@@ -17,9 +17,10 @@ const AboutUs = ({ content }) => {
         <meta name="keywords" content={content?.MT[0].metaKeywords} />
       </Helmet> */}
 <img src={square} alt="" className={css.bg_square} />
+
+
     <div className={css.banner}>
-      <h1>關於FAST CASH</h1>
-    <img src={bg} alt="" width={"100%"} />
+      <h1>關於FAST CASH</h1>    
         
     </div>
  

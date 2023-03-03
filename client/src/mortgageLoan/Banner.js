@@ -21,7 +21,7 @@ const banner_style = {
     <div className="banner">
       <div className="banner-container">
         <div className="banner-pic" style={banner_style}>
-          <div className="banner-title">
+          <div className="banner-title" style={{backgroundColor: "rgb(255 255 255 / 54%) !important",width:"594px"}}>
             <div className="header" style={{ color: "#A2C43A" }}>
               {/* <span style={{color:"#A2C43A"}}> */}
               <h1>{name_ch}</h1>

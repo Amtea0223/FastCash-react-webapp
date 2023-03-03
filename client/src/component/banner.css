@@ -30,21 +30,22 @@
 
 .banner-title {
   margin-top: 3rem;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border-radius:50px;
-  width: 600px;
-  height: 500px;
-  /* justify-content: center; */
-  text-align: left;
-  margin-left: 5vw;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    width: 490px;
+    height: 410px;
+    /* justify-content: center; */
+    text-align: left;
+    margin-left: 5vw;
 }
 
 .banner-title .header
 {
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 2rem;
+  margin-left: 4rem;
   margin-right: 200px;
   color: #A2C43A;
   font-size: 2rem;
@@ -71,7 +72,7 @@
 }
 .banner-title .body
 {
-  margin-top: 50px;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,14 +83,14 @@
 .banner-title .body .item
 {
   display: grid;
-  width: 250px;
-  justify-content: center;
-  justify-items: center;
+    width: 14rem;
+    justify-content: center;
+    justify-items: center;
 }
 
 .banner-content .body .item span
 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .banner-content .body .item img
@@ -151,20 +152,20 @@
   }
 }
 
-@media only screen and (max-width: 1440px)  {
+
   .balance-banner-title {
     margin-top: 3rem;
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 435px;
     /* justify-content: center; */
     text-align: left;
     margin-right: 3rem;
   }
-}
+
 
 .balance-banner-title .balance-header
 {
-  margin-top: 50px;
+  margin-top: 1.5rem;
   margin-left: 50px;
   margin-right: 200px;
   color: #A2C43A;
@@ -186,11 +187,16 @@
 .balance-banner-title .balance-item-title {
   display: inline-block;
   color: #444444;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   /* font-size: 2rem; */
   letter-spacing: 6px;
   text-indent: 3px;
+}
+
+.balance-item span{
+  font-size: 14px;
+  text-align: center;
 }
 .balance-banner-title .balance-body
 {
@@ -205,7 +211,7 @@
 .balance-banner-title .balance-body .balance-item
 {
   display: grid;
-  width: 18rem;
+  width: 12rem;
   justify-content: center;
   justify-items: center;
 }

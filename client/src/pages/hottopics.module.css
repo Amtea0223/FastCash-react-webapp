@@ -1,0 +1,37 @@
+.banner h1{
+    
+    position: absolute;
+    top:35%;
+   
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 17px;
+    padding: 2rem;
+
+    color:white;
+    font-size: 2.8rem;   
+    text-shadow: rgb(165, 165, 165) 1px 0 10px; 
+      
+}
+
+.banner{
+
+    background: url('../images/hotTopics/blog.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+    position: relative;
+    display: flex;
+    place-content: center;
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+
+}

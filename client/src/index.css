@@ -124,12 +124,12 @@ a:hover {
 
 
 .square-group{
-  width: 500px;
-  height: 500px;
+  width: 75ch;
+  height: 75ch;
   position: absolute;
   z-index: 99;
-  top: 67rem;
-  left: 10vw;
+  top: 49rem;
+  left: 3vw;
 }
 
 @media only screen and (min-width: 1200px) {

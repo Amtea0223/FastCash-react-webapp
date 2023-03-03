@@ -35,11 +35,9 @@ import ApplyForm from "./component/ApplyForm"
 // import Application from "./component/Application/Application"
 
 
-function App() { 
-  const data = {} 
-  const post_result = {}
-  // const { data } = useFetch(ENV + "/api/v1/content")
-  // const post_result = useFetch(ENV + "/api/v1/post")
+function App() {     
+  const { data } = useFetch(ENV + "/api/v1/content")
+  const post_result = useFetch(ENV + "/api/v1/post")
   const [showBottomNav, setShowBottomNav] = useState(true)
 
   const pathname = window.location.pathname;
@@ -130,6 +128,7 @@ function App() {
           /> */}
           {/* <Route exact path="/loanprocess" element={<LoanProcess />} /> */}
           <Route exact path="/hottopics/:order/:title" element={<HotTopics content={data} postData ={post_result.data} />} />
+          {/* <Route exact path="/hottopics" element={<HotTopics content={data} postData ={post_result.data} />} /> */}
           
           <Route exact path="/thankyou" element={<Thankyou content = {data} />} />
           <Route exact path="/disclaimer" element={<Disclaimer content={data} />} />

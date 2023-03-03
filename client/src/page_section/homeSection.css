@@ -194,19 +194,22 @@
   background-image:url(../images/applyform_bg.png) ;
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
 }
 
 .estimateForm-bg img
 {
-  position: absolute;
-  transform: scale(0.7);
-}
+  position: absolute;    
+  transform: scale(0.5);
+  bottom:15rem;
+  left: -8rem;
+  }
 
 .estimate-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 67vh;
 }
 
 .estimate-house {
@@ -441,7 +444,7 @@
 {
   background-image: url("../images/green_bg.png");
 
-  height: 40rem;
+  height: 33rem;
   background-repeat: no-repeat;
   background-size:contain;
   background-position: right 0;

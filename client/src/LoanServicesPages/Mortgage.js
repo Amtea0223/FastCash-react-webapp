@@ -10,11 +10,11 @@ const Mortgage = ({ content,metaData }) => {
   window.scrollTo(0, 90)
   return (
     <div className="loanServices">
-       <Helmet>
+       {/* <Helmet>
     <title>{metaData?.MT[3].metaTitle}</title>
     <meta name='description' content={metaData?.MT[3].metaDescription}/>
     <meta name='keywords' content={metaData?.MT[3].metaKeywords}/>
-    </Helmet>
+    </Helmet> */}
       <div className="loanServices-container">
         <Banner name={"Loan Service"} name_ch={"貸款服務"} bg_url={banner_bg} />
         <div className="loanServices-content">

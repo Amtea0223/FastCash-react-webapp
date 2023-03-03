@@ -11,9 +11,9 @@ const banner_style = {
   background: `url(${bg_url})`,
   backgroundSize:'cover',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition:'center',
+  backgroundPositionY: '82%',
   width:'100%',
-  height: "95vh",
+  height: "94vh",
   clipPath:"polygon(0 0, 100% 1%, 100% 56%, 0 83%)",
 }
 
