@@ -1,25 +1,16 @@
 
 
-.PrivateLoanSection1 
-{
-    background-image: url(../images/component_section1_bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: initial;
-}
 
 .PrivateLoanSection1-upper
 {
     display: flex;
     flex-direction: row;
-    position: relative;
-    height: 70vh;
+    position: relative;    
 }
 
 .PrivateLoanSection1-left
 {
-    display: flex;
-    /* justify-content: center; */
+    display: flex;    
     align-items: center;
     flex-direction: column;
     width: 60%;
@@ -56,11 +47,7 @@
 
 .PrivateLoanSection1-right
 {
-
-    /* background-image:url('../images//applybtn_bg.png'); */
     width: 30%;
-    /* background-size: contain; */
-    height: 50vh;
     background-repeat: no-repeat !important;
     display: flex;
     justify-content: center;
@@ -98,8 +85,7 @@
 
 .PrivateLoanSection1-lower
 {
-    display: flex;
-    height: 25rem;
+    display: flex;    
     justify-content: center;
     position: relative;
 }

@@ -11,9 +11,10 @@ const banner_style = {
   background: `url(${bg_url})`,
   backgroundSize:'cover',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition:'center',
+  backgroundPositionY: '82%',
   width:'100%',
-  height:'150vh',
+  height: "94vh",
+  clipPath:"polygon(0 0, 100% 1%, 100% 56%, 0 83%)",
 }
 
 
@@ -24,13 +25,13 @@ const banner_style = {
           <div className="banner-title">
             <div className="header" style={{ color: "#A2C43A" }}>
               {/* <span style={{color:"#A2C43A"}}> */}
-              <h4>{name_ch}</h4>
+              <h1>{name_ch}</h1>
               <div className="line"></div>
             </div>
             <div className="banner-content">
               <div className="body">
                 <div className="item">
-                  <img src={icon1} alt=""></img>
+                  <img src={icon1} alt="" ></img>
                   <span>申請費用全免</span>
                 </div>
                 <div className="item">

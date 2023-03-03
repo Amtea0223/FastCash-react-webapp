@@ -4,17 +4,18 @@ import NumberSlider from "./NumberSlider";
 import TextField from "@mui/material/TextField";
 import ApplicationBtn from "./ApplicationBtn";
 import { Input, InputAdornment } from "@mui/material";
-import { width } from "@mui/system";
 
-const CalculatorContent = () => {
-  // const [amount, setAmount] = useState(0)
+
+const CalculatorContent = () => {  
   const [principal, setPrincipal] = useState(0);
-  const [period, setPeriod] = useState("");
+  const [period, setPeriod] = useState(0);
   const [monthlyPay, setMonthlyPay] = useState(0);
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState(0);
+  const [sliderAmount, setSliderAmount] = useState(0);  
   const [focused, setFocused] = useState(false);
 
   const HandleAmount = (value) => {
+    setSliderAmount(value)
     setPrincipal(value);
     FormatMoney(value);
   };
@@ -25,6 +26,10 @@ const CalculatorContent = () => {
       setAmount(value);
     }
   };
+  const handleAmountChange =(event) =>
+  {
+    setAmount(event.target.value);
+  }
 
   const handleFocus = (event) => {
     if (!focused) {
@@ -39,18 +44,18 @@ const CalculatorContent = () => {
   };
 
   useEffect(() => {
-    let P = amount;
+    let P = principal;
     let t = period;
     let i = 0.3 / 12;
     let result = 0;
-    result = (P * i * (1 + i) ** t) / ((1 + i) ** t - 1);
 
     if (P === "" || t === 0) {
       setMonthlyPay("");
     } else {
+      result = (P * i * (1 + i) ** t) / ((1 + i) ** t - 1);
       setMonthlyPay("$" + Math.round(result));
     }
-  }, [amount, period]);
+  }, [principal, period]);
 
   return (
     <div
@@ -63,7 +68,6 @@ const CalculatorContent = () => {
       <div className="caltor-center">
         <div className="caltor-item">
           <p>貸款金額</p>
-          {/* <p>${amount}</p> */}
           <TextField
             variant="outlined"
             placeholder=" 150,000"
@@ -81,8 +85,17 @@ const CalculatorContent = () => {
             }}
             onInput={handleInput}
             onFocus={handleFocus}
+            onChange={handleAmountChange}
             className={"caltor-item-txtField"}
             autoFocus
+          />
+        </div>
+        <div className="caltor-slider">
+          <NumberSlider
+            max_value={500000}
+            step_value={1000}
+            setChangedValue={HandleAmount}
+            changedValue ={sliderAmount}
           />
         </div>
 
@@ -112,9 +125,18 @@ const CalculatorContent = () => {
         </div>
       </div>
 
-      <h3 style={{ marginLeft: "1.5rem" ,marginTop: "2rem"}}>每期還款額：{monthlyPay}</h3>
+      <h3 style={{ marginLeft: "1.5rem", marginTop: "2rem" }}>
+        每期還款額：<span className="caltor-payment">{monthlyPay}</span>
+      </h3>
       <div className="caltor-note">
-        <p style={{ fontSize: "1px",marginTop:"2rem",marginLeft:"1rem",marginRight:"1rem" }}>
+        <p
+          style={{
+            fontSize: "1px",
+            marginTop: "2rem",
+            marginLeft: "1rem",
+            marginRight: "1rem",
+          }}
+        >
           以上計算假設實際年利率為5-30%不等，只供參考，最終實際年利率按個別申請人之實際情況而定。
         </p>
       </div>

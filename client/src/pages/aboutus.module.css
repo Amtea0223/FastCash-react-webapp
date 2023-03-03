@@ -1,0 +1,72 @@
+.banner h1{
+ 
+}
+
+.banner{
+
+    background: url('../images/aboutus/aboutus_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+    height: 20rem;
+    position: relative;
+    display: flex;
+    place-content: center;
+
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+
+}
+
+
+
+
+
+
+.banner h1{
+   
+    color:white;
+    font-size: 2.8rem;   
+    text-shadow: rgb(165, 165, 165) 1px 0 10px; 
+        
+    position: absolute;
+    top:35%;
+    
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 17px;
+    padding: 2rem;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top:5rem
+}
+
+.content h1{
+    color:#A2C43A;
+    padding-bottom: 1rem;
+}
+
+.bg_square{
+    width: 900px;
+    position: absolute;
+    top:55rem;
+    z-index: -1;
+
+}
+
+.content h5{
+    width: 45rem;
+    text-align: center;
+}

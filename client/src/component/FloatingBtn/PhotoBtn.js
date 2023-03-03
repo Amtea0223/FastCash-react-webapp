@@ -4,7 +4,7 @@ const PhotoBtn = () => {
   return (
     <div className="phoneBtn">
       <div className="phoneBtn-container">
-        <a href="tel:9363-4203">
+        <a href="tel:2887-7002">
           <img src={phone_icon} className="phoneIcon" alt="" />
         </a>
       </div>

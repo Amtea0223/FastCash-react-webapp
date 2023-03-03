@@ -1,0 +1,6 @@
+.container{
+    display: flex;
+     width: clamp(500px, 100vw, 600px);
+
+}
+

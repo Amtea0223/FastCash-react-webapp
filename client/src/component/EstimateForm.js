@@ -74,7 +74,7 @@ const EstimateForm = ({ content }) => {
     };
 
     try {
-      fetch(ENV + "/rest/application", {
+      fetch(ENV + "/api/v1/application", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -149,7 +149,8 @@ const EstimateForm = ({ content }) => {
             <div className="estimForm2"></div>
             <div className="estimForm3">
               <div className="estimForm3-left">
-                <label>姓名</label>
+
+                <label className="estimForm-label">姓名</label>
                 <TextField
                   id="outlined-name"
                   label=""
@@ -160,7 +161,7 @@ const EstimateForm = ({ content }) => {
                   onChange={(e) => setAppliciantname(e.target.value)}
                   name="name"
                 />
-                <label>聯絡電話</label>
+                <label className="estimForm-label">聯絡電話</label>
                 <TextField
                   id="outlined-name"
                   label=""
@@ -172,7 +173,7 @@ const EstimateForm = ({ content }) => {
                   inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                   name="phoneNumb"
                 />
-                <label>身分證號碼</label>
+                <label className="estimForm-label">身分證號碼</label>
                 <TextField
                   id="outlined-name"
                   label=""
@@ -185,7 +186,7 @@ const EstimateForm = ({ content }) => {
                 />
               </div>
               <div className="estimForm3-right">
-                <label>支薪方式</label>
+                <label className="estimForm-label">支薪方式</label>
                 <TextField
                   label=""
                   variant="outlined"
@@ -198,7 +199,7 @@ const EstimateForm = ({ content }) => {
                     setPaymentMethod(e.target.value);
                   }}
                 />
-                <label>貸款目的</label>
+                <label className="estimForm-label">貸款目的</label>
                 <TextField
                   label=""
                   variant="outlined"
@@ -211,7 +212,7 @@ const EstimateForm = ({ content }) => {
                     setPurpose(e.target.value);
                   }}
                 />
-                <label>貸款金額</label>
+                <label className="estimForm-label">貸款金額</label>
                 <TextField
                   label=""
                   variant="outlined"

@@ -1,6 +1,7 @@
 import "./mortgageLoanSection.css";
 import family from "../images/mortgageLoan/family.png";
 
+
 const MortgageLoanSection1 = () => {
   return (
     <div className="MortgageLoanSection1">

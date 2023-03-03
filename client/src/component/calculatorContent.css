@@ -13,6 +13,8 @@
 {
   background: transparent linear-gradient(265deg, #BEE643 0%, #96B732 100%) 0% 0% no-repeat padding-box;
   padding: 5px; 
+  padding-top: 1.3rem;
+  padding-left: 1rem;
   color: white;
   height: 5rem;
 }
@@ -38,7 +40,7 @@
 .caltor-slider
 {
   text-align: -webkit-center;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .caltor-note
@@ -104,10 +106,16 @@
   flex-direction: column;
 }
 
-.caltor-appy-btn {  
+/* .caltor-appy-btn {  
   display: flex;
   margin-top: 20px;
   justify-content: center;  
+} */
+
+.caltor-payment
+{
+  color: #9CC51D;
+  font-size: 4rem;
 }
 
 

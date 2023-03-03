@@ -4,18 +4,18 @@
   "private": true,
   "scripts": {
     "deploy": "keystone build && keystone prisma migrate deploy",
-    "dev": "keystone dev",
+    "dev": "keystone prisma migrate && keystone dev",
     "start": "keystone start",
     "build": "keystone build",
     "postinstall": "keystone postinstall",
-    "destory": "keystone prisma db push --force-reset",
-    "prismag": "prisma generate"
+    "destory":"keystone prisma db push --force-reset",
+    "prismag":"prisma generate",
+    "prismam":"keystone prisma migrate"
   },
   "dependencies": {
     "@keystone-6/auth": "^6.0.0",
     "@keystone-6/core": "^4.0.1",
     "@keystone-6/fields-document": "^6.0.0",
-    "@prisma/client": "^4.3.1",
     "body-parser": "^1.20.1",
     "typescript": "^4.8.0"
   }

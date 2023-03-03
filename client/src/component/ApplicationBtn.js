@@ -26,7 +26,7 @@ export default function ApplicationBtn({
 
   const handleClickOpen = () => {
     // setOpen(true)
-    navigate("/application/form")
+    navigate("/application")
   }
 
   const handleClose = () => {

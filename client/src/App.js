@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import "./App.css"
 import { BrowserRouter, Routes, Route  } from "react-router-dom"
 import useFetch from "./codeHelper/useFetch"
-import AboutUs from "./AboutUs"
+// import AboutUs from "./AboutUs"
 import NavBar from "./component/NavBar"
 import Home from "./Home"
 import LoanProcess from "./LoanProcess"
@@ -19,7 +19,9 @@ import OnlineLoan from "./LoanServicesPages/OnlineLoan"
 import PrivateLoan from "./PrivateLoan"
 import MortgageLoan from "./mortgageLoan/MortgageLoan"
 import BalanceTransfer from "./balanceTransfer/BalanceTransfer"
-
+import AboutUs from "./pages/AboutUs"
+import Contact from "./pages/Contact"
+import Application from "./pages/Application"
 // import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.min.css"
 import chatbot_icon from "./component/chatbot/chatbotman.png"
@@ -30,14 +32,12 @@ import Ordinance from "./Ordinance"
 import ReactChatbot from "./component/chatbot/ReactChatbot"
 import { ENV } from "./config"
 import ApplyForm from "./component/ApplyForm"
-import Application from "./component/Application/Application"
+// import Application from "./component/Application/Application"
 
 
-function App() { 
-  const data = {} 
-  const post_result = {}
-  // const { data } = useFetch(ENV + "/api/v1/content")
-  // const post_result = useFetch(ENV + "/api/v1/post")
+function App() {     
+  const { data } = useFetch(ENV + "/api/v1/content")
+  const post_result = useFetch(ENV + "/api/v1/post")
   const [showBottomNav, setShowBottomNav] = useState(true)
 
   const pathname = window.location.pathname;
@@ -67,7 +67,7 @@ function App() {
       <div className="App">
         {/* <ToastContainer autoClose={10000} hideProgressBar /> */}
         {/* <ReactChatbot /> */}
-        {/* <FloatBtnList /> */}
+        <FloatBtnList />
         {/* {showBottomNav && (
           <ApplicationBtn
             isBottomNav={true}
@@ -107,12 +107,18 @@ function App() {
           <Route
             exact
             path="/about"
-            element={<PrivateLoan content={data} />}
-          />
+            element={<AboutUs content={data} />}
+          />          
           <Route
             exact
             path="/contact"
-            element={<PrivateLoan content={data} />}
+            element={<Contact content={data} />}
+          />
+
+          <Route
+            exact
+            path="/application"
+            element={<Application content={data} />}
           />
           
           {/* <Route
@@ -122,6 +128,7 @@ function App() {
           /> */}
           {/* <Route exact path="/loanprocess" element={<LoanProcess />} /> */}
           <Route exact path="/hottopics/:order/:title" element={<HotTopics content={data} postData ={post_result.data} />} />
+          {/* <Route exact path="/hottopics" element={<HotTopics content={data} postData ={post_result.data} />} /> */}
           
           <Route exact path="/thankyou" element={<Thankyou content = {data} />} />
           <Route exact path="/disclaimer" element={<Disclaimer content={data} />} />

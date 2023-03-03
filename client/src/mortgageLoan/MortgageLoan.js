@@ -11,6 +11,7 @@ import Banner from "../mortgageLoan/Banner";
 import Footer from "../component/Footer";
 import { Helmet } from "react-helmet";
 import bg from "../images/mortgageLoan/bg.png";
+import square from "../images/squaregp.png";
 
 const PrivateLoan = ({ content }) => {
   return (
@@ -23,10 +24,12 @@ const PrivateLoan = ({ content }) => {
       <div className="MortgageLoan-section1-container">
         <Banner name={"Private Loan"} name_ch={"按揭及業主貸款"} bg_url={bg} />
       </div>
-      <div className="MortgageLoan-section2-container">
+      <div className="MortgageLoan-section2-container" style={{position:"relative"}}>
+        <img src={square} alt="" style={{position:"absolute",top:"-29rem",scale:"0.5",left:"-20rem"}} />        
         <PrivateLoanSection1 title={"為客戶提供「一按」、「二按」及「轉按」服務。相對銀行繁複的審批過程，我們的貸款計劃能為閣下提供彈性的貸款服務。"} desc={""}/>
       </div>
       <div className="MortgageLoan-section5-container">
+        
         <MortgageLoanSection1/>
       </div>
 
