@@ -12,7 +12,7 @@
 {
   width: 230px;
   position: absolute;
-  margin-top: 18rem;
+  bottom: 50px;  
 }
 
 .footer p,
@@ -30,19 +30,21 @@
 }
 
 .footer-container {
-  margin-top: 30px;
+  padding-top: 1rem;  
   display: grid;
-  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-columns: 30vw 24vw 30vw;
   grid-template-rows: 13vh 20vh 8vh;
   grid-template-areas:
     "space address detail"
     "space address detail"
     "note note note";
+  position: relative;
 }
 
 .ft1 {
   grid-area: space;
   display: flex;
+  justify-self: self-end;
 }
 
 .ft1 a
@@ -52,23 +54,25 @@
 
 .ft1 .ft1-loanservices a, .ft1 .ft1-commonLink1 a
 {
-  font-size:x-large;
+  font-size:1rem;
   font-family:"pingfangBold" !important;
 }
 
 .ft1 .ft1-commonLink2 a
 {
-  font-size: 20px;
+  font-size: 0.7rem;
 }
 
 .ft2 {
   grid-area: address;
   display: flex;
   flex-direction: column;
+  justify-self: center;
 }
 
-.ft2 P,.ft2 span {
-  font-size:larger;
+
+.ft2 span {
+  font-size:1rem;
 }
 
 
@@ -83,6 +87,10 @@
 }
 .ft3.a {
   line-height: 1rem;
+}
+
+.ft3 p {
+  font-size: 0.7rem;
 }
 
 .ft4 {

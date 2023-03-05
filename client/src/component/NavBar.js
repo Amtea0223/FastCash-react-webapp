@@ -3,12 +3,41 @@ import "./navbar.css";
 import logo from "../images/FC-logo.png";
 import ApplicationBtn from "./ApplicationBtn";
 import { useMediaQuery } from "react-responsive";
+import { Button } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import { Link,useNavigate } from "react-router-dom";
 
 const NavBar = ({ content, postData, props }) => {
   const isMobileOrTablet = useMediaQuery({
     query: "(max-width: 990px)",
   });
 
+
+  
+const ApplyButton = styled(Button)({
+  color:"#FFF",
+  backgroundColor: "#A2C43A",
+  width: "100px",
+  height: "35px",
+  fontSize: "1.1vw",
+  fontWeight: "bold",
+  borderRadius:"22px",
+  "&:hover": {
+    backgroundColor: "#667c23",
+    transform:"translateY(1px)",    
+  },
+});
+
+
+const ApplyArea =() => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/application');
+  };
+  return (   
+        <ApplyButton onClick={handleClick}>立即申請</ApplyButton>
+  );
+}
   // const servicesDrpList = [
   //   { title: "免TU貸款", link: "/tu" },
   //   { title: "物業一按 | 二按", link: "/mortgage" },
@@ -69,7 +98,7 @@ const NavBar = ({ content, postData, props }) => {
               <Nav.Link href={"/hottopics/" + blogPostOrdering + "/" + String(blogPostTitle).replace(/\s/g, "")}>貸款迷思</Nav.Link>
               {/* <Nav.Link href={"/hottopics/"}>貸款迷思</Nav.Link> */}
               <Nav.Link href="/about">關於 FAST CASH</Nav.Link>
-              <Nav.Link href="/application">立即申請</Nav.Link>
+              <Nav.Link href="/application">{ApplyArea()}</Nav.Link>
               <Nav.Link href="https://fastcash-proj.web.app/">登入</Nav.Link>
               {/* <div className="dropdown-divider"></div> */}
               {/* <Nav.Link href={"/hottopics/" + blogPostOrdering + "/" + String(blogPostTitle).replace(/\s/g, "")}>{content?.menu[4].label}</Nav.Link> */}

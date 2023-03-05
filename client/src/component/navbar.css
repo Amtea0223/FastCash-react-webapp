@@ -10,8 +10,9 @@
 .nav-link a{
   margin-left: 0.5rem !important;
   margin-right: 0.5rem !important;
-  font-size: 1.2rem !important;
+  font-size: 1.1vw !important;
   font-weight: 500;
+  
 }
 
 .hotline {
@@ -23,8 +24,8 @@
 }
 
 .nav-text a {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 0!important;
+  margin-right:0 !important;
 
   align-self: center;
   text-decoration: none !important;

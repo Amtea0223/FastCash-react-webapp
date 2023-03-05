@@ -127,7 +127,7 @@ a:hover {
   width: 75ch;
   height: 75ch;
   position: absolute;
-  z-index: 99;
+  z-index: -1;  
   top: 49rem;
   left: 3vw;
 }

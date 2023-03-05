@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
 
           <div className="ft2">
-            <p style={{color:"#A2C43A", paddingTop:"15px"}}>FAST CASH 快易錢</p>
+            <h5 style={{color:"#A2C43A", paddingTop:"15px"}}>FAST CASH 快易錢</h5>
             <span>放債人牌照號碼： 1726/2021</span>
             <span>尖沙咀山林道4號恒貿商業中心9樓3室</span>
             {/* <p>放債人牌照號碼： 1726/2021</p> */}
@@ -137,8 +137,8 @@ const Footer = () => {
             </p>
           </div>
           <div className="ft4">
-            <span style={{fontSize:"20px"}}>忠告：借錢梗要還，咪俾錢中介</span>
-            <p>© Copyright© 快易錢 Fast Profit Finance Ltd. All Rights Reserved.</p>
+            <span style={{fontSize:"1.2rem"}}>忠告：借錢梗要還，咪俾錢中介</span>
+            <p style={{fontSize:"0.4rem"}}>© Copyright© 快易錢 Fast Profit Finance Ltd. All Rights Reserved.</p>
             {/* <div className="footer-statement">
               <p>註: 根據《放債人條例》年利率最高不超過48厘。</p>
               <p>供款期由6個月至個120月常見還款例子:</p>
