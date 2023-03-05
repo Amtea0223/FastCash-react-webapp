@@ -1,11 +1,9 @@
-
 .banner-btn {
   text-align: right;
   margin-right: 14vw;
 }
 
-.balance-banner-pic
-{
+.balance-banner-pic {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -27,51 +25,48 @@
   color: white;
 }
 
-
 .banner-title {
+  transform: scale(0.8);
+
   margin-top: 3rem;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    width: 490px;
-    height: 410px;
-    /* justify-content: center; */
-    text-align: left;
-    margin-left: 5vw;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  width: 490px;
+  height: 410px;
+  /* justify-content: center; */
+  text-align: left;
+  margin-left: 5vw;
 }
 
-.banner-title .header
-{
+.banner-title .header {
   margin-top: 2rem;
   margin-left: 4rem;
   margin-right: 200px;
-  color: #A2C43A;
+  color: #a2c43a;
   font-size: 2rem;
   letter-spacing: 6px;
   text-indent: 3px;
- 
 }
 
 .banner-title .header .line {
   height: 1px;
-  background: #77BF27;
+  background: #77bf27;
   height: 3px;
   border-width: 1px;
   border-style: solid;
 }
 
-
 .banner-title h4 {
   display: inline-block;
-  color: #A2C43A;
+  color: #a2c43a;
   font-size: 2rem;
   letter-spacing: 6px;
   text-indent: 3px;
 }
-.banner-title .body
-{
+.banner-title .body {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
@@ -80,67 +75,57 @@
   place-content: center;
 }
 
-.banner-title .body .item
-{
+.banner-title .body .item {
   display: grid;
-    width: 14rem;
-    justify-content: center;
-    justify-items: center;
+  width: 14rem;
+  justify-content: center;
+  justify-items: center;
 }
 
-.banner-content .body .item span
-{
+.banner-content .body .item span {
   font-size: 20px;
 }
 
-.banner-content .body .item img
-{
+.banner-content .body .item img {
   transform: scale(0.7);
 }
 
 /* Mortgage Loan  */
 
-.mortgage-banner-content .mortgage-banner-content-body
-{
+.mortgage-banner-content .mortgage-banner-content-body {
   display: flex;
   flex-direction: column;
 }
 
-.mortgage-banner-body
-{
+.mortgage-banner-body {
   margin-top: 3rem;
 }
 
-.mortgage-banner-body-item
-{
+.mortgage-banner-body-item {
   margin-left: 3rem;
   width: 500px;
   /* margin-top: 2rem; */
 }
 
-.mortgage-banner-body-item img
-{
+.mortgage-banner-body-item img {
   transform: scale(0.7);
 }
 
-
-.mortgage-banner-body-item span
-{
+.mortgage-banner-body-item span {
   margin-left: 1rem;
   font-size: 25px;
 }
 
 /* Balance Transfer  */
-.balance-banner-title
-{
+.balance-banner-title {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  border-radius:50px;
+  border-radius: 50px;
   margin-left: 5vw;
 }
 
-@media only screen and (max-width: 1920px)  {
+@media only screen and (max-width: 1920px) {
   .balance-banner-title {
     margin-top: 3rem;
 
@@ -152,37 +137,32 @@
   }
 }
 
+.balance-banner-title {
+  margin-top: 3rem;
+  width: 500px;
+  height: 435px;
+  /* justify-content: center; */
+  text-align: left;
+  margin-right: 3rem;
+}
 
-  .balance-banner-title {
-    margin-top: 3rem;
-    width: 500px;
-    height: 435px;
-    /* justify-content: center; */
-    text-align: left;
-    margin-right: 3rem;
-  }
-
-
-.balance-banner-title .balance-header
-{
+.balance-banner-title .balance-header {
   margin-top: 1.5rem;
   margin-left: 50px;
   margin-right: 200px;
-  color: #A2C43A;
+  color: #a2c43a;
   font-size: 2rem;
   letter-spacing: 6px;
   text-indent: 3px;
- 
 }
 
 .balance-banner-title .balance-header .balance-line {
   height: 1px;
-  background: #77BF27;
+  background: #77bf27;
   height: 3px;
   border-width: 1px;
   border-style: solid;
 }
-
 
 .balance-banner-title .balance-item-title {
   display: inline-block;
@@ -194,12 +174,11 @@
   text-indent: 3px;
 }
 
-.balance-item span{
+.balance-item span {
   font-size: 14px;
   text-align: center;
 }
-.balance-banner-title .balance-body
-{
+.balance-banner-title .balance-body {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
@@ -208,16 +187,14 @@
   place-content: center;
 }
 
-.balance-banner-title .balance-body .balance-item
-{
+.balance-banner-title .balance-body .balance-item {
   display: grid;
   width: 12rem;
   justify-content: center;
   justify-items: center;
 }
 
-.balance-banner-title .balance-banner-content .balance-body .balance-item img
-{
+.balance-banner-title .balance-banner-content .balance-body .balance-item img {
   transform: scale(0.6);
 }
 
@@ -238,4 +215,3 @@
     margin: 0;
   }
 }
-

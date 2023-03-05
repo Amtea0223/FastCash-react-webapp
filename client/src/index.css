@@ -1,26 +1,33 @@
-@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
 @font-face {
-  font-family: "pingfangBold";
-  src: url("./font/pingfang_hk_bold.ttf");
+  font-family: 'pingfangBold';
+  src: url('./font/pingfang_hk_bold.ttf');
 }
 @font-face {
-  font-family: "pingfangSmall";
-  src: url("./font/pingfang_hk_small.otf");
+  font-family: 'pingfangSmall';
+  src: url('./font/pingfang_hk_small.otf');
+}
+@font-face {
+  font-family: 'pingfangMedium';
+  src: url('./font/pingfang_hk_mediumblack.otf');
 }
 
 div,
 p,
 a,
 span,
-h1,
-h2,
 h3,
 h4,
 h5,
 button,
 label {
   /* font-family: "Noto Sans TC", sans-serif !important; */
-  font-family: "pingfangSmall" !important;
+  font-family: 'pingfangSmall' !important;
+  /* color: #444444; */
+}
+h1,
+h2 {
+  font-family: 'pingfangMedium' !important;
 }
 
 a {
@@ -101,7 +108,7 @@ a:hover {
 
 .desc-style span {
   font-size: 1.2rem;
-  font-family: "pingfangSmall" !important;
+  font-family: 'pingfangSmall' !important;
   line-height: 1.7;
 }
 
@@ -122,12 +129,11 @@ a:hover {
 }
 /** end input style**/
 
-
-.square-group{
+.square-group {
   width: 75ch;
   height: 75ch;
   position: absolute;
-  z-index: -1;  
+  z-index: -1;
   top: 49rem;
   left: 3vw;
 }

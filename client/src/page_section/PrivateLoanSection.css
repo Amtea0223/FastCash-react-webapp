@@ -1,57 +1,48 @@
-
-
-
-.PrivateLoanSection1-upper
-{
-    display: flex;
-    flex-direction: row;
-    position: relative;    
+.PrivateLoanSection1-upper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
-.PrivateLoanSection1-left
-{
-    display: flex;    
-    align-items: center;
-    flex-direction: column;
-    width: 60%;
-
+.PrivateLoanSection1-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
 }
 
-.PrivateLoanSection1-left h3
-{
-    width: 40vw;
-    margin-bottom: 50px;
+.PrivateLoanSection1-left h4 {
+  font-size: 1.3rem;
+  width: 40vw;
+  margin-bottom: 1.3rem;
 }
 
-.PrivateLoanSection1-left p
-{
-    width: 40vw;
+.PrivateLoanSection1-left p {
+  color: #636363;
+  width: 40vw;
 }
 
-.applyArea-container{
-    background-image:url('../images/applybtn_bg.png');
-       background-repeat: no-repeat !important;
-       background-size: contain;
-       margin-top: -13rem;
-   }
-
-.applyArea{
-    width: 500px;
-    height: 390px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.applyArea-container {
+  background-image: url('../images/applybtn_bg.png');
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  margin-top: -13rem;
 }
 
+.applyArea {
+  width: 500px;
+  height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.PrivateLoanSection1-right
-{
-    width: 30%;
-    background-repeat: no-repeat !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.PrivateLoanSection1-right {
+  width: 30%;
+  background-repeat: no-repeat !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .PrivateLoanSection1-right-img
@@ -67,7 +58,6 @@
     background-size: contain;
 } */
 
-
 /* .PrivateLoanSection1-right img
 {
     position: absolute;
@@ -75,40 +65,33 @@
     top: -14rem;
 } */
 
-.apply-btn-container
-{
-    width: 700rem;
-    height: 600rem;
-    background-color: black;
+.apply-btn-container {
+  width: 700rem;
+  height: 600rem;
+  background-color: black;
 }
 
-
-.PrivateLoanSection1-lower
-{
-    display: flex;    
-    justify-content: center;
-    position: relative;
+.PrivateLoanSection1-lower {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-.PrivateLoanSection1-lower img
-{
-    position: absolute;
-    transform: rotate(320deg);
-    left: 49rem;
-    top: -10rem;
-    /* margin-left: 40rem; */
+.PrivateLoanSection1-lower img {
+  position: absolute;
+  transform: rotate(320deg);
+  left: 49rem;
+  top: -10rem;
+  /* margin-left: 40rem; */
 }
 
-
-.PrivateLoanSection1-lower-word
-{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 2rem ;
+.PrivateLoanSection1-lower-word {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.PrivateLoanSection1-lower img
-{
-    position: absolute;
-    z-index: -1;
+.PrivateLoanSection1-lower img {
+  position: absolute;
+  z-index: -1;
 }

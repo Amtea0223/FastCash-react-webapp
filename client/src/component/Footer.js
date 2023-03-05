@@ -1,10 +1,10 @@
-import "./footer.css";
-import icon from "../images/logo.png";
-import { HashLink } from "react-router-hash-link";
-import { useMediaQuery } from "react-responsive";
-import logo from "../images/FC-logo.png";
+import './footer.css';
+import icon from '../images/logo.png';
+import { HashLink } from 'react-router-hash-link';
+import { useMediaQuery } from 'react-responsive';
+import logo from '../images/FC-logo.png';
 const Footer = () => {
-  const isMobileTablet = useMediaQuery({ query: "(max-width: 1212px)" });
+  const isMobileTablet = useMediaQuery({ query: '(max-width: 1212px)' });
 
   //original
   // const commonLink_list = [
@@ -27,50 +27,50 @@ const Footer = () => {
   // ]
   const commonLink1_list = [
     {
-      title: "貸款迷思",
-      url: "/question",
+      title: '貸款迷思',
+      url: '/question',
     },
     {
-      title: "聯絡我們",
-      url: "/contact",
+      title: '聯絡我們',
+      url: '/contact',
     },
   ];
 
   const commonLink2_list = [
     {
-      title: "免責聲明",
-      url: "/privateLoan",
+      title: '免責聲明',
+      url: '/privateLoan',
     },
     {
-      title: "隱私政策",
-      url: "/privateLoan",
+      title: '隱私政策',
+      url: '/privateLoan',
     },
     {
-      title: "個人資料收集聲明",
-      url: "/privateLoan",
+      title: '個人資料收集聲明',
+      url: '/privateLoan',
     },
     {
-      title: "放債人條例",
-      url: "/privateLoan",
+      title: '放債人條例',
+      url: '/privateLoan',
     },
   ];
 
   const loanServices_list = [
     {
-      title: "私人貸款",
-      url: "/privateLoan",
+      title: '私人貸款',
+      url: '/privateLoan',
     },
     {
-      title: "按揭及業主貸款",
-      url: "/mortgage",
+      title: '按揭及業主貸款',
+      url: '/mortgage',
     },
     {
-      title: "結餘轉戶",
-      url: "/balance",
+      title: '結餘轉戶',
+      url: '/balance',
     },
     {
-      title: "申請表格",
-      url: "/application",
+      title: '申請表格',
+      url: '/application',
     },
   ];
 
@@ -82,8 +82,8 @@ const Footer = () => {
             <img className="footer-icon" src={icon} alt="" />
           </div> */}
           <img className="footer-logo" src={logo} alt="" />
-          <div className="ft1" >
-            <div  style={{ marginleft: "90px" }}>
+          <div className="ft1">
+            <div style={{ marginLeft: '3rem', marginRight: '1rem' }}>
               {/* <p>常用連結</p> */}
               {loanServices_list.map((item, index) => (
                 <div key={index} className="mt-3 ft1-loanservices">
@@ -94,7 +94,7 @@ const Footer = () => {
               ))}
             </div>
 
-            <div style={{ marginLeft: "90px" }}>
+            <div style={{ marginLeft: '90px' }}>
               {commonLink1_list.map((item, index) => (
                 <div key={index} className="mt-3 ft1-commonLink1">
                   <HashLink smooth to={item.url}>
@@ -113,7 +113,9 @@ const Footer = () => {
           </div>
 
           <div className="ft2">
-            <h5 style={{color:"#A2C43A", paddingTop:"15px"}}>FAST CASH 快易錢</h5>
+            <h5 style={{ color: '#A2C43A', paddingTop: '15px' }}>
+              FAST CASH 快易錢
+            </h5>
             <span>放債人牌照號碼： 1726/2021</span>
             <span>尖沙咀山林道4號恒貿商業中心9樓3室</span>
             {/* <p>放債人牌照號碼： 1726/2021</p> */}
@@ -137,8 +139,12 @@ const Footer = () => {
             </p>
           </div>
           <div className="ft4">
-            <span style={{fontSize:"1.2rem"}}>忠告：借錢梗要還，咪俾錢中介</span>
-            <p style={{fontSize:"0.4rem"}}>© Copyright© 快易錢 Fast Profit Finance Ltd. All Rights Reserved.</p>
+            <span style={{ fontSize: '1.2rem' }}>
+              忠告：借錢梗要還，咪俾錢中介
+            </span>
+            <p style={{ fontSize: '0.4rem', color: '#afafaf' }}>
+              © Copyright© 快易錢 Fast Profit Finance Ltd. All Rights Reserved.
+            </p>
             {/* <div className="footer-statement">
               <p>註: 根據《放債人條例》年利率最高不超過48厘。</p>
               <p>供款期由6個月至個120月常見還款例子:</p>

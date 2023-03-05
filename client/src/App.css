@@ -11,7 +11,7 @@
   font-size: 1.2rem !important;
   color: #c59b6d !important;
   min-width: 390px !important;
-  z-index: 99999!important;
+  z-index: 99999 !important;
 }
 .Toastify__toast-body > div:last-child {
   padding-left: 30px !important;

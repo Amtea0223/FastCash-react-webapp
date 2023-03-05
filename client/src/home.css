@@ -11,7 +11,7 @@
 }
 .section1_container {
   position: relative;
-  width: 100%;  
+  width: 100%;
 }
 
 .section2_bg {
@@ -26,11 +26,11 @@
 .section2_container {
   z-index: -1;
   position: relative;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
-.section3_bg {    
-  width: 100%;  
+.section3_bg {
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0;
@@ -40,20 +40,16 @@
 .section_whychoose {
   /* height: fit-content; */
   display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 15rem;
 }
 
-
-
-.section5_container
-{
-  margin-bottom:3rem;
+.section5_container {
+  margin-bottom: 3rem;
   margin-top: 1rem;
 }
-
 
 @media only screen and (max-width: 991px) {
   .section1_bg {
