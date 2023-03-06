@@ -1,8 +1,10 @@
 .whychoose {
-  display: grid;
-  text-align-last: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40rem;
+  justify-content: center;
 }
-
+/* 
 .subtitle-middle-line {
   display: grid;
   text-align-last: center;
@@ -11,7 +13,7 @@
   text-align: center;
   font-weight: 600;
   font-size: 23px;
-}
+} */
 
 .whychoose span {
   text-align: center;
@@ -20,9 +22,8 @@
   margin-left: 40px;
   margin-right: 40px;
   font-size: 23px;
-  
 }
-
+/* 
 .middle-line {
   width: 36vw;
   border: 2px solid rgb(177, 175, 175);
@@ -69,4 +70,4 @@
   .whychoose {
     padding-bottom: 50px;
   }
-}
+} */

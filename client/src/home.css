@@ -38,12 +38,11 @@
 }
 
 .section_whychoose {
-  /* height: fit-content; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 15rem;
+  height: 44vh;
 }
 
 .section5_container {
