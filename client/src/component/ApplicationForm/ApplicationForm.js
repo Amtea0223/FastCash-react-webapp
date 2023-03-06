@@ -126,7 +126,11 @@ const ApplicationForm = () => {
           <img src={square} className={css.square} />
           <Box
             sx={{
-              '& > :not(style)': { m: 2, width: '80%' },
+              '& > :not(style)': {
+                m: 2,
+                maxWidth: '1000px',
+                minWidth: '320px',
+              },
             }}
             //selector selects all direct children of the Box component that are not style elements
           >

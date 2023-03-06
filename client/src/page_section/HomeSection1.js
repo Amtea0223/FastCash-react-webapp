@@ -1,29 +1,22 @@
-import "./homeSection.css"
-import { HashLink } from "react-router-hash-link"
-import big_gold_text from "../images/home/home_big_gold_text.png"
-import btn_credit from "../images/home/home_creditcard.png"
-import btn_houseloan from "../images/home/home_houseloan.png"
-import btn_personloan from "../images/home/home_personloan.png"
-import btn_upgrade from "../images/home/home_upgrade.png"
-import home_bg_mob from "../images/home/home_bg_mob.png"
-import { useMediaQuery } from "react-responsive"
-import React, { useState } from "react";
+import './homeSection.css';
+import { HashLink } from 'react-router-hash-link';
+import big_gold_text from '../images/home/home_big_gold_text.png';
+import btn_credit from '../images/home/home_creditcard.png';
+import btn_houseloan from '../images/home/home_houseloan.png';
+import btn_personloan from '../images/home/home_personloan.png';
+import btn_upgrade from '../images/home/home_upgrade.png';
+import home_bg_mob from '../images/home/home_bg_mob.png';
+import { useMediaQuery } from 'react-responsive';
+import React, { useState } from 'react';
 
-
-import video from "../videos/banner_video.mp4"
-import { Player,ControlBar } from "video-react"
+import video from '../videos/banner_video.mp4';
+import { Player, ControlBar } from 'video-react';
 // import ControlBar from "video-react/lib/components/control-bar/ControlBar"
-import "video-react/dist/video-react.css";
-
-
-
-
-
+import 'video-react/dist/video-react.css';
 
 const HomeSection1 = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 991px)" })  
+  const isMobile = useMediaQuery({ query: '(max-width: 991px)' });
 
-  
   // const [isPlaying, setIsPlaying] = useState(true);
   // const videoRef = useRef(null);
 
@@ -41,20 +34,19 @@ const HomeSection1 = () => {
       {!isMobile && (
         <div className="home-section1">
           <div className="home-banner1">
-          <Player
-                // ref={playerRef}
-                playsInline
-                autoPlay
-                loop={true}
-                volume={0}
-                muted={true}
-                src={video}                
-              >                
-                <ControlBar disableDefaultControls/>
-              </Player>
+            <Player
+              // ref={playerRef}
+              playsInline
+              autoPlay
+              loop={true}
+              volume={0}
+              muted={true}
+              src={video}
+            >
+              <ControlBar disableDefaultControls />
+            </Player>
           </div>
         </div>
-      
       )}
       {isMobile && (
         <div>
@@ -81,7 +73,7 @@ const HomeSection1 = () => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default HomeSection1
+export default HomeSection1;

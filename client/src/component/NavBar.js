@@ -1,43 +1,38 @@
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import "./navbar.css";
-import logo from "../images/FC-logo.png";
-import ApplicationBtn from "./ApplicationBtn";
-import { useMediaQuery } from "react-responsive";
-import { Button } from "@mui/material";
-import { styled } from "@mui/material/styles";
-import { Link,useNavigate } from "react-router-dom";
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import './navbar.css';
+import logo from '../images/FC-logo.png';
+import ApplicationBtn from './ApplicationBtn';
+import { useMediaQuery } from 'react-responsive';
+import { Button } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Link, useNavigate } from 'react-router-dom';
 
 const NavBar = ({ content, postData, props }) => {
   const isMobileOrTablet = useMediaQuery({
-    query: "(max-width: 990px)",
+    query: '(max-width: 990px)',
   });
 
+  const ApplyButton = styled(Button)({
+    color: '#FFF',
+    backgroundColor: '#A2C43A',
+    width: '100px',
+    height: '35px',
+    fontSize: '1.1rem',
+    fontWeight: 'bold',
+    borderRadius: '22px',
+    '&:hover': {
+      backgroundColor: '#667c23',
+      transform: 'translateY(1px)',
+    },
+  });
 
-  
-const ApplyButton = styled(Button)({
-  color:"#FFF",
-  backgroundColor: "#A2C43A",
-  width: "100px",
-  height: "35px",
-  fontSize: "1.1vw",
-  fontWeight: "bold",
-  borderRadius:"22px",
-  "&:hover": {
-    backgroundColor: "#667c23",
-    transform:"translateY(1px)",    
-  },
-});
-
-
-const ApplyArea =() => {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate('/application');
+  const ApplyArea = () => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+      navigate('/application');
+    };
+    return <ApplyButton onClick={handleClick}>立即申請</ApplyButton>;
   };
-  return (   
-        <ApplyButton onClick={handleClick}>立即申請</ApplyButton>
-  );
-}
   // const servicesDrpList = [
   //   { title: "免TU貸款", link: "/tu" },
   //   { title: "物業一按 | 二按", link: "/mortgage" },
@@ -66,15 +61,15 @@ const ApplyArea =() => {
   // ];
 
   let servicesDrpList_id = 0;
-  const blogPostTitle = postData ? postData[postData.length - 1].title : "";
+  const blogPostTitle = postData ? postData[postData.length - 1].title : '';
   const blogPostOrdering = postData
     ? postData[postData.length - 1].ordering
-    : "";
+    : '';
 
   return (
     <div className="navbar-container">
       <Navbar bg="white" variant="white" expand="lg">
-        <Container >
+        <Container>
           <div className="nav-logo-group">
             <Navbar.Brand href="/">
               <img className="nav-logo" src={logo} alt="" />
@@ -95,7 +90,18 @@ const ApplyArea =() => {
               <NavDropdown.Divider />
               <Nav.Link href="/mortgage">按揭及業主貸款</Nav.Link>
               <Nav.Link href="/balance">結餘轉戶</Nav.Link>
-              <Nav.Link href={"/hottopics/" + blogPostOrdering + "/" + String(blogPostTitle).replace(/\s/g, "")}>貸款迷思</Nav.Link>
+              {postData && postData.length > 0 && (
+                <Nav.Link
+                  href={
+                    '/hottopics/' +
+                    blogPostOrdering +
+                    '/' +
+                    String(blogPostTitle).replace(/\s/g, '')
+                  }
+                >
+                  貸款迷思
+                </Nav.Link>
+              )}
               {/* <Nav.Link href={"/hottopics/"}>貸款迷思</Nav.Link> */}
               <Nav.Link href="/about">關於 FAST CASH</Nav.Link>
               <Nav.Link href="/application">{ApplyArea()}</Nav.Link>

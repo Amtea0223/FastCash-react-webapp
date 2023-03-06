@@ -1,4 +1,5 @@
 import './privateLoan.css';
+import style from './privateLoan.module.css';
 import HomeSection1 from './page_section/HomeSection1';
 import WhyChoose from './component/WhyChoose';
 import HomeSection2 from './page_section/HomeSection2';
@@ -8,13 +9,13 @@ import PrivateLoanSection1 from './page_section/PrivateLoanSection1';
 import Banner from './component/Banner';
 import Footer from './component/Footer';
 import { Helmet } from 'react-helmet';
-import bg from './images/privateLoan/bg.png';
+import bg from './images/privateLoan/bg.jpg';
 import square from './images/squaregp.png';
 import ApplicationForm from './component/ApplicationForm/ApplicationForm';
 
 const PrivateLoan = ({ content }) => {
   return (
-    <div className="PrivateLoan">
+    <div className={style.container}>
       {/* <Helmet>
         <title>{content?.MT[0].metaTitle}</title>
         <meta name="description" content={content?.MT[0].metaDescription} />

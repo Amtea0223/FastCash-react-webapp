@@ -81,7 +81,7 @@ const Footer = () => {
           {/* <div className="ft1">
             <img className="footer-icon" src={icon} alt="" />
           </div> */}
-          <img className="footer-logo" src={logo} alt="" />
+
           <div className="ft1">
             <div style={{ marginLeft: '3rem', marginRight: '1rem' }}>
               {/* <p>常用連結</p> */}
@@ -139,6 +139,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="ft4">
+            <img className="footer-logo" src={logo} alt="" />
             <span style={{ fontSize: '1.2rem' }}>
               忠告：借錢梗要還，咪俾錢中介
             </span>
@@ -157,7 +158,7 @@ const Footer = () => {
           {/* <div className="ft6"></div> */}
         </div>
       )}
-      {isMobileTablet && (
+      {/* {isMobileTablet && (
         <div className="footer-container-mob">
           <img className="footer-icon" src={icon} alt="" />
           <div className="footer-contact-mob">
@@ -207,7 +208,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

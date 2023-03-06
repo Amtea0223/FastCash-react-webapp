@@ -5,7 +5,7 @@ import PrivateLoanSection1 from '../page_section/PrivateLoanSection1';
 import Banner from '../balanceTransfer/Banner';
 import Footer from '../component/Footer';
 import { Helmet } from 'react-helmet';
-import bg from '../images/balancetransfer/balance_bg.png';
+import bg from '../images/balancetransfer/balance_bg.jpg';
 import ApplicationForm from '../component/ApplicationForm/ApplicationForm';
 
 const BalanceTransfer = ({ content }) => {

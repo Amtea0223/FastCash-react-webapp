@@ -1,8 +1,7 @@
 .container {
   width: 100%;
-  display: flex !important;
-  justify-content: center !important;
-  text-align: -webkit-center;
+  display: flex;
+  justify-content: center;
   position: relative;
   margin-top: 7vw;
 }
@@ -20,6 +19,6 @@
 .square {
   position: absolute;
   transform: scale(0.5);
-  bottom: 4rem;
-  left: -2rem;
+  bottom: 4vw;
+  left: 16vw;
 }
