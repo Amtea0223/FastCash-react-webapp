@@ -3,6 +3,8 @@ import icon from '../images/logo.png';
 import { HashLink } from 'react-router-hash-link';
 import { useMediaQuery } from 'react-responsive';
 import logo from '../images/FC-logo.png';
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   const isMobileTablet = useMediaQuery({ query: '(max-width: 1212px)' });
 
@@ -81,7 +83,6 @@ const Footer = () => {
           {/* <div className="ft1">
             <img className="footer-icon" src={icon} alt="" />
           </div> */}
-
           <div className="ft1">
             <div style={{ marginLeft: '3rem', marginRight: '1rem' }}>
               {/* <p>常用連結</p> */}
@@ -128,22 +129,15 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="ft3">
-            <p>備註</p>
-            <p>
-              FAST CASH 快易錢還款期為6至60個月之間的私人貸款。實際 年利率介乎
-              3%至
-              48%，將視乎個別情況而定。以下為參考例子：假如你的貸款額為$50,000
-              ，還款期12個月，實際年利率(APR)3.8%，那每月還款額應為
-              HK$4,253，而總還款額則是HK$51,036
-            </p>
-          </div>
+          <div className="ft3"></div>
           <div className="ft4">
-            <img className="footer-logo" src={logo} alt="" />
-            <span style={{ fontSize: '1.2rem' }}>
+            <Link to={'/'}>
+              <img className="footer-logo" src={logo} alt="" />
+            </Link>
+            <span style={{ fontSize: '1.6rem' }}>
               忠告：借錢梗要還，咪俾錢中介
             </span>
-            <p style={{ fontSize: '0.4rem', color: '#afafaf' }}>
+            <p style={{ fontSize: '1rem', color: '#afafaf' }}>
               © Copyright© 快易錢 Fast Profit Finance Ltd. All Rights Reserved.
             </p>
             {/* <div className="footer-statement">
@@ -154,6 +148,16 @@ const Footer = () => {
                 HK$975
               </p>
             </div> */}
+          </div>
+          <div className="ft5">
+            <p>備註</p>
+            <p>
+              FAST CASH 快易錢還款期為6至60個月之間的私人貸款。實際 年利率介乎
+              3%至
+              48%，將視乎個別情況而定。以下為參考例子：假如你的貸款額為$50,000
+              ，還款期12個月，實際年利率(APR)3.8%，那每月還款額應為
+              HK$4,253，而總還款額則是HK$51,036
+            </p>
           </div>
           {/* <div className="ft6"></div> */}
         </div>

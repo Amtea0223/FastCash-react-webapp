@@ -5,18 +5,15 @@
 .footer {
   background-color: #eeeeee;
   width: 100%;
-  height: 50vh;
-  min-height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-top: 3rem;
 }
 
 .footer-logo {
-  width: 230px;
-  position: absolute;
-  bottom: 2rem;
-  left: 6.5vw;
+  /* position: absolute;
+  top: 19rem; */
+  padding-bottom: 2rem;
 }
 
 .footer p,
@@ -34,21 +31,23 @@
 }
 
 .footer-container {
+  width: 100%;
   padding-top: 1rem;
   display: grid;
-  grid-template-columns: 30vw 24vw 30vw;
-  grid-template-rows: 13vh 21vh 8vh;
+  grid-template-columns: 23% 22% 22% 33%;
+  grid-template-rows: 13rem 4rem;
   grid-template-areas:
-    'space address detail'
-    'space address detail'
-    'note note note';
-  position: relative;
+    'space address detail space2'
+    'space address detail space2'
+    'note note note note';
+  /* position: relative; */
 }
 
 .ft1 {
   grid-area: space;
   display: flex;
   justify-self: self-end;
+  position: relative;
 }
 
 .ft1 a {
@@ -62,7 +61,7 @@
 }
 
 .ft1 .ft1-commonLink2 a {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .ft2 {
@@ -84,12 +83,13 @@
 .ft3 {
   grid-area: detail;
 }
-.ft3.a {
+.ft5.a {
   line-height: 1rem;
 }
 
-.ft3 p {
-  font-size: 0.7rem;
+.ft5 p {
+  font-size: 0.8rem;
+  padding-right: 2rem;
 }
 
 .ft4 {
@@ -97,15 +97,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .ft4 p {
-  font-size: larger;
+  font-size: 0.7vw;
 }
 
 .ft5 {
-  grid-area: address;
+  grid-area: space2;
 }
 .ft6 {
   grid-area: license;
@@ -135,29 +134,4 @@
   font-weight: bold;
   border-bottom: #dac99c 1px solid;
   text-align: center;
-}
-
-.footer-statement {
-  /* font-size: 12px; */
-}
-@media only screen and (max-width: 600px) {
-  .footer p,
-  .footer h5,
-  .footer a {
-    color: #dac99c;
-    text-decoration: none;
-    font-size: 12px;
-  }
-  .footer-statement {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 1212px) {
-  .footer {
-    height: fit-content;
-    padding-bottom: 100px;
-  }
-  .footer-statement {
-    text-align: center;
-  }
 }
