@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react"
-import Button from "@mui/material/Button"
-import Dialog from "@mui/material/Dialog"
-import DialogContent from "@mui/material/DialogContent"
-import DialogTitle from "@mui/material/DialogTitle"
+import { useEffect, useState } from 'react';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from '@mui/material/DialogTitle';
 // import useMediaQuery from "@mui/material/useMediaQuery"
 // import { useTheme } from "@mui/material/styles"
-import "./applicationBtn.css"
-import ApplyForm from "./ApplyForm"
-import ApplyAnimBtn from "./ApplyAnimBtn"
-import MobileBottomNav from "./MobileBottomNav"
-import { Link, useNavigate } from "react-router-dom"
+import './applicationBtn.css';
+import ApplyForm from './ApplyForm';
+import ApplyAnimBtn from './ApplyAnimBtn';
+import MobileBottomNav from './MobileBottomNav';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function ApplicationBtn({
   isBannerBtn,
@@ -19,22 +19,22 @@ export default function ApplicationBtn({
   isBottomNav,
   isApplyBtn,
 }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   // const theme = useTheme()
   // const fullScreen = useMediaQuery(theme.breakpoints.down("xl"))
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleClickOpen = () => {
     // setOpen(true)
-    navigate("/application")
-  }
+    navigate('/application');
+  };
 
   const handleClose = () => {
-    setOpen(false)
-  }
+    setOpen(false);
+  };
 
   return (
-    <div style={{ zIndex: "10" }}>
+    <div style={{ zIndex: '10' }}>
       {/* register button */}
 
       {isAboutusBtn && (
@@ -84,9 +84,9 @@ export default function ApplicationBtn({
       >
         <DialogTitle
           id="responsive-dialog-title"
-          style={{ textAlign: "right" }}
+          style={{ textAlign: 'right' }}
         >
-          <Button onClick={handleClose} autoFocus style={{ color: "#c59b6d" }}>
+          <Button onClick={handleClose} autoFocus style={{ color: '#c59b6d' }}>
             X
           </Button>
         </DialogTitle>
@@ -96,5 +96,5 @@ export default function ApplicationBtn({
       </Dialog>
       {/* end */}
     </div>
-  )
+  );
 }

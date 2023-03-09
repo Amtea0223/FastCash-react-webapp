@@ -8,8 +8,7 @@ import Footer from './component/Footer';
 import { Helmet } from 'react-helmet';
 import HomeSection4 from './page_section/HomeSection4';
 import HomeSection5 from './page_section/HomeSection5';
-import square from './images/squaregp.png';
-import bigman from './images/home/homebg4.png';
+import homebg4 from './images/home/homebg4.png';
 import css from './pages/home.module.css';
 import EstimateForm from './component/EstimateForm';
 import ApplicationForm from './component/ApplicationForm/ApplicationForm';
@@ -27,26 +26,28 @@ const Home = ({ content }) => {
     <meta name='keywords' content={content?.MT[0].metaKeywords}/>
     </Helmet>       */}
 
-      <img src={square} alt="" className="square-group" />
-
       <div className="section1_container section1_bg">
         <HomeSection1 />
       </div>
       <div className="section2_container section2_bg">
         <HomeSection2 />
       </div>
-      <div className="section_whychoose">
-        <WhyChoose content={content} />
+      <div className="section3_container">
+        <div className="d-flex justify-content-center">
+          <p>
+            可選擇透過網上平台完成整個貸款申請過程，
+            <br />
+            即時提取現金。
+          </p>
+        </div>
       </div>
-      <div
-        className="section4_container section4_bg"
-        style={{ position: 'relative' }}
-      >
-        <img src={bigman} alt="" className={css.bigman} />
+      <div className="section4_container">
+        <img src={homebg4} alt="" className="homebg4" />
         <HomeSection4 />
       </div>
-      <ApplicationForm />
-      {/* <HomeSection3 content={content} /> */}
+      <div style={{ marginTop: '10rem' }}>
+        <ApplicationForm />
+      </div>
 
       <div className="section5_container section5_bg">
         <HomeSection5 />

@@ -1,37 +1,54 @@
-import ApplicationBtn from "./ApplicationBtn";
-import icon1 from "../images/privateLoan/icon1.png";
-import icon2 from "../images/privateLoan/icon2.png";
-import icon3 from "../images/privateLoan/icon3.png";
-import icon4 from "../images/privateLoan/icon4.png";
+import ApplicationBtn from './ApplicationBtn';
+import icon1 from '../images/privateLoan/icon1.png';
+import icon2 from '../images/privateLoan/icon2.png';
+import icon3 from '../images/privateLoan/icon3.png';
+import icon4 from '../images/privateLoan/icon4.png';
 
-import "./banner.css";
+import './banner.css';
+import BannerSquare from './BannerSquare/BannerSquare';
 const Banner = ({ name, name_ch, bg_url }) => {
+  const banner_style = {
+    background: `url(${bg_url})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPositionY: '82%',
+    width: '100%',
+    height: '94vh',
+    clipPath: 'polygon(0 0, 100% 1%, 100% 56%, 0 83%)',
+  };
 
-const banner_style = {
-  background: `url(${bg_url})`,
-  backgroundSize:'cover',
-  backgroundRepeat: 'no-repeat',
-  backgroundPositionY: '82%',
-  width:'100%',
-  height: "94vh",
-  clipPath:"polygon(0 0, 100% 1%, 100% 56%, 0 83%)",
-}
-
+  const data = [
+    {
+      icon: icon1,
+      text: '申請費用全免',
+    },
+    {
+      icon: icon2,
+      text: '還款期長達48個月',
+    },
+    {
+      icon: icon3,
+      text: '貸款額高達月薪10倍',
+    },
+    {
+      icon: icon4,
+      text: '最快30分鐘現金到手',
+    },
+  ];
 
   return (
     <div className="banner">
       <div className="banner-container">
         <div className="banner-pic" style={banner_style}>
-          <div className="banner-title">
-            <div className="header" style={{ color: "#A2C43A" }}>
-              {/* <span style={{color:"#A2C43A"}}> */}
+          {/* <div className="banner-title">
+            <div className="header" style={{ color: '#A2C43A' }}>
               <h1>{name_ch}</h1>
               <div className="line"></div>
             </div>
             <div className="banner-content">
               <div className="body">
                 <div className="item">
-                  <img src={icon1} alt="" ></img>
+                  <img src={icon1} alt=""></img>
                   <span>申請費用全免</span>
                 </div>
                 <div className="item">
@@ -46,11 +63,12 @@ const banner_style = {
                 </div>
                 <div className="item">
                   <img src={icon4} alt=""></img>
-                  <span>最快 30分鐘現金到手</span>
+                  <span>最快30分鐘現金到手</span>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <BannerSquare header={name_ch} data={data} test={icon1} />
 
           {/* <div className="banner-btn">
             <ApplicationBtn isBannerBtn={true} />

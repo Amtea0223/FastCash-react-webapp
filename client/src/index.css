@@ -12,7 +12,7 @@
   src: url('./font/pingfang_hk_mediumblack.otf');
 }
 
-div,
+/* div,
 p,
 a,
 span,
@@ -20,7 +20,11 @@ h3,
 h4,
 h5,
 button,
-label {
+label {  
+  font-family: 'pingfangSmall' !important;  
+} */
+
+body {
   /* font-family: "Noto Sans TC", sans-serif !important; */
   font-family: 'pingfangSmall' !important;
   /* color: #444444; */

@@ -6,9 +6,8 @@
   grid-template-areas:
     "desc rule"
     "detail detail"; */
-    padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 3rem 3rem;
 }
-
 
 .estimForm1 {
   display: flex;
@@ -31,26 +30,24 @@
   display: flex;
 }
 
-.estimForm3-left
-{
+.estimForm3-left {
   display: grid;
   grid-template-columns: 100px 400px;
-  grid-template-rows: 70px 70px 70px ;
+  grid-template-rows: 70px 70px 70px;
   grid-template-areas:
-  "desc input"
-  "desc input"
-  "desc input";
+    'desc input'
+    'desc input'
+    'desc input';
   width: 50%;
 }
-.estimForm3-right
-{
+.estimForm3-right {
   display: grid;
   grid-template-columns: 100px 400px;
-  grid-template-rows: 70px 70px 70px ;
+  grid-template-rows: 70px 70px 70px;
   grid-template-areas:
-    "desc input"
-    "desc input"
-    "desc input";
+    'desc input'
+    'desc input'
+    'desc input';
   width: 50%;
 }
 
@@ -62,24 +59,18 @@
   display: flex;
 }
 
-.estimForm4 label
-{
+.estimForm4 label {
   width: 750px;
   color: #77bf27;
 }
 
-.estimForm-btn
-{
+.estimForm-btn {
   text-align-last: right;
 }
 
-.estimForm-label
-{
+.estimForm-label {
   padding-top: 7px;
 }
-
-
-
 
 /* tablet */
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -98,6 +89,6 @@
 }
 
 .estimForm3-mob {
-  text-align: center;
   text-align: -webkit-center;
+  text-align: center;
 }

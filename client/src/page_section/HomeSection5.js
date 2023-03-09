@@ -6,6 +6,7 @@ import icon3 from '../images/icon/dollar_white.png';
 import image3 from '../images/balancetransfer/balance_bg.jpg';
 import image2 from '../images/home/home_istockphoto.png';
 import image1 from '../images/privateLoan/bg.jpg';
+import green_bg from '../images/green_bg.png';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import knowmore from '../images/btn/knowmore.png';
 import { useState, useEffect } from 'react';
@@ -37,16 +38,16 @@ const HomeSection5 = () => {
       <h4>{header}</h4>
       <p>{content}</p>
 
-      <div className="section5-main-btn" onClick={handleNavigate}>
-        <img src={knowmore}></img>
-        <p>了解更多</p>
+      <div className="mt-4" onClick={handleNavigate}>
+        <img src={knowmore} className="little_arrow" />
+        <span style={{ cursor: 'pointer' }}>了解更多</span>
       </div>
     </div>
   );
 
   const tabpic = () => (
     <div className="section5-main-img">
-      <img src={pic} alt=""></img>
+      <img src={pic} alt="" />
     </div>
   );
 
@@ -128,11 +129,9 @@ const HomeSection5 = () => {
         </div>
         <div className="section5-main section5_main_bg">
           <div className="section5-main-container">
+            <img src={green_bg} alt="" className="green_bg" />
             <div className="section5-main-content">
               {tabpic()}
-              {/* <div className="section5-main-img">
-              <img src={couple} alt=""></img>
-            </div> */}
               <div className="section5-main-content-right">{info()}</div>
             </div>
           </div>

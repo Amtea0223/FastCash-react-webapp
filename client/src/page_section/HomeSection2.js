@@ -6,15 +6,22 @@ import CalculatorContent from '../component/CalculatorContent';
 const HomeSection2 = () => {
   return (
     <div className="home-section2">
-      <img className="calculator-dot-bg" src={dot_bg} />
-      <p>
+      <div
+        style={{
+          fontSize: '2.5rem',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
         <span style={{ color: '#9DD75E' }}>特快</span>網上貸款
-      </p>
+      </div>
       <div className="home-section2-container">
         <div className="home-section2-container-left">
           <img className="calculator-man" src={man} alt="" />
         </div>
         <div className="calculator">
+          <img className="calculator-dot-bg" src={dot_bg} />
           <CalculatorContent />
         </div>
       </div>

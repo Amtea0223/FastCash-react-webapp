@@ -104,8 +104,10 @@ const NavBar = ({ content, postData, props }) => {
               )}
               {/* <Nav.Link href={"/hottopics/"}>貸款迷思</Nav.Link> */}
               <Nav.Link href="/about">關於 FAST CASH</Nav.Link>
+              <Nav.Link href="https://fastcash-proj.web.app/">
+                客戶登入
+              </Nav.Link>
               <Nav.Link href="/application">{ApplyArea()}</Nav.Link>
-              <Nav.Link href="https://fastcash-proj.web.app/">登入</Nav.Link>
               {/* <div className="dropdown-divider"></div> */}
               {/* <Nav.Link href={"/hottopics/" + blogPostOrdering + "/" + String(blogPostTitle).replace(/\s/g, "")}>{content?.menu[4].label}</Nav.Link> */}
             </Nav>

@@ -1,0 +1,41 @@
+.square_container {
+  width: clamp(340px, 100%, 600px);
+  background: #ffffff59;
+  border-radius: 17px;
+  padding: 1rem;
+}
+
+.header {
+  font-family: 'pingfangMedium' !important;
+  color: #a2c43a;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px #cccccc;
+  border-bottom: 2px solid #a2c43a;
+  padding-right: 5rem;
+  width: 19rem;
+}
+
+.item_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  margin-bottom: 1rem;
+}
+.icon img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.text {
+  font-size: 1.2rem;
+}
