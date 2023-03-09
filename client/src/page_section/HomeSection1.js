@@ -17,25 +17,12 @@ import 'video-react/dist/video-react.css';
 const HomeSection1 = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 991px)' });
 
-  // const [isPlaying, setIsPlaying] = useState(true);
-  // const videoRef = useRef(null);
-
-  // const handleClick = () => {
-  //   if (isPlaying) {
-  //     videoRef.current.pause();
-  //   } else {
-  //     videoRef.current.play();
-  //   }
-  //   setIsPlaying(!isPlaying);
-  // };
-
   return (
     <div>
       {!isMobile && (
         <div className="home-section1">
           <div className="home-banner1">
             <Player
-              // ref={playerRef}
               playsInline
               autoPlay
               loop={true}

@@ -46,10 +46,9 @@
 }
 
 .MortgageLoanSection1-2-right img {
-  transform: scale(0.6);
+  width: 40vw;
   position: absolute;
-  left: -15rem;
-  top: -15rem;
+  top: -6rem;
 }
 
 .MortgageLoanSection1-3 {
@@ -67,10 +66,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 5rem;
 }
 .MortgageLoanSection2-left {
   align-self: center;
-  margin-right: -5rem;
 }
 
 .MortgageLoanSection2-left-row-item {
@@ -91,5 +90,5 @@
 }
 
 .MortgageLoanSection2-right img {
-  transform: scale(0.7);
+  width: 33vw;
 }

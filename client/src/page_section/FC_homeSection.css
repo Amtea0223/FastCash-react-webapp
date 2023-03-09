@@ -2,10 +2,6 @@
   width: 100%;
 }
 
-.section-space {
-  height: 100px;
-}
-
 /* Section 1 */
 .home-section1 {
   display: flex;

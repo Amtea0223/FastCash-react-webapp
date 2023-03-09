@@ -10,7 +10,7 @@ import MortgageLoanSection2 from '../page_section/MortgageLoanSection2';
 import Banner from '../mortgageLoan/Banner';
 import Footer from '../component/Footer';
 import { Helmet } from 'react-helmet';
-import bg from '../images/mortgageLoan/bg.png';
+import bg from '../images/mortgageLoan/mortgage_banner.jpg';
 import square from '../images/squaregp.png';
 import ApplicationForm from '../component/ApplicationForm/ApplicationForm';
 

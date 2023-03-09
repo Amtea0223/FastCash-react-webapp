@@ -1,17 +1,28 @@
 .square_container {
-  width: clamp(340px, 100%, 600px);
-  background: #ffffff59;
+  width: 28rem;
+  height: 25rem;
+  background: #ffffff71;
   border-radius: 17px;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+.square_container div {
+  color: #444444 !important;
 }
 
 .header {
   font-family: 'pingfangMedium' !important;
-  color: #a2c43a;
+  color: #2b3223;
   font-size: 2rem;
-  text-shadow: 2px 2px 5px #cccccc;
-  border-bottom: 2px solid #a2c43a;
+  text-shadow: 2px 2px 5px #939292;
+  border-bottom: 2px solid #2b3223;
   padding-right: 5rem;
+  margin-left: 1.5rem;
   width: 19rem;
 }
 
@@ -32,10 +43,17 @@
   margin-bottom: 1rem;
 }
 .icon img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .text {
+  text-align: center;
   font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 0.9rem;
+  font-weight: 600;
 }
