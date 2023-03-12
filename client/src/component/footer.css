@@ -1,137 +1,138 @@
-.footer a:hover {
-  color: #c8c7c7;
-}
-
 .footer {
-  background-color: #eeeeee;
-  width: 100%;
-  display: flex;
-  justify-content: start;
-  margin-top: 3rem;
-}
+    /* position: absolute; */
+    background-color: #eeeeee;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'pingfang' !important;
+    
+  }
 
-.footer-logo {
-  /* position: absolute;
-  top: 19rem; */
-  padding-bottom: 2rem;
-}
+  .footer a:hover {
+    color: #c8c7c7;
+  }
+  
+  .footer p,
+  .footer h5,
+  .footer a {
+    color: #444444;
+    text-decoration: none;
+    font-size: 1rem;
+    
+  }
+  
+  .footer-icon {  
+    height: 12vh;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 13vh 12vh 8vh;
+    grid-template-areas:
+      "icon space detail"
+      "tel space license"
+      "address space license";
+  }
+  
+  .ft1 {
+    grid-area: icon;
+    /* font-family: 'pingfangBold' !important; */
+  }
+  .ft2 {
+    grid-area: space;
+    display: flex;
+  }
 
-.footer p,
-.footer h5,
-.footer a {
-  color: '#444444';
-  text-decoration: none;
-  /* font-size: 1rem ;
-  font-weight: 100 ; */
-}
+  .ft2 p, .ft2 a
+  {
+   font-size: 20px;
+  }
+  .ft2 a {
+    text-decoration: none;
+    color: #444444;
+  }
+  
+  .ft3 {
+    grid-area: tel;
+    margin-top: 1rem;
+  }
+  .ft3.a {
+    line-height: 1rem;
+  }
+  
+  .ft4 {
+    grid-area: detail;
+    display: flex;
+    flex-direction: column;
+  }
+  .ft4 p{
+    font-size: 25px ;
+  }
+  
+  .ft5 {
+    grid-area: address;
+  }
+  .ft6 {
+    grid-area: license;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 
-.footer-icon {
-  height: 12vh;
-  margin-bottom: 2rem;
-}
-
-.footer-container {
-  width: 100%;
-  padding-top: 1rem;
-  display: grid;
-  grid-template-columns: 23% 22% 22% 33%;
-  grid-template-rows: 13rem 4rem;
-  grid-template-areas:
-    'space address detail space2'
-    'space address detail space2'
-    'note note note note';
-  /* position: relative; */
-}
-
-.ft1 {
-  grid-area: space;
-  display: flex;
-  justify-self: self-end;
-  position: relative;
-}
-
-.ft1 a {
-  color: #444444;
-}
-
-.ft1 .ft1-loanservices a,
-.ft1 .ft1-commonLink1 a {
-  font-size: 1rem;
-  font-family: 'pingfangBold' !important;
-}
-
-.ft1 .ft1-commonLink2 a {
-  font-size: 0.8rem;
-}
-
-.ft2 {
-  grid-area: address;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-}
-
-.ft2 span {
-  font-size: 1rem;
-}
-
-.ft2 a {
-  text-decoration: none;
-  color: #444444;
-}
-
-.ft3 {
-  grid-area: detail;
-}
-.ft5.a {
-  line-height: 1rem;
-}
-
-.ft5 p {
-  font-size: 0.8rem;
-  padding-right: 2rem;
-}
-
-.ft4 {
-  grid-area: note;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ft4 p {
-  font-size: 0.7vw;
-}
-
-.ft5 {
-  grid-area: space2;
-}
-.ft6 {
-  grid-area: license;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-/**********mobile start************/
-.footer-container-mob {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-.footer-contact-mob {
-  text-align: center;
-}
-.footer-link-mob {
-  display: flex;
-}
-.footer-link-mob > div {
-  padding: 20px;
-}
-.footer-header-mob {
-  font-size: 1.4rem;
-  font-weight: bold;
-  border-bottom: #dac99c 1px solid;
-  text-align: center;
-}
+  .footer-loanServices a
+  {
+    font-size: 1.5rem;
+  }
+  
+  /**********mobile start************/
+  .footer-container-mob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .footer-contact-mob {
+    text-align: center;
+  }
+  .footer-link-mob {
+    display: flex;
+  }
+  .footer-link-mob > div {
+    padding: 20px;
+  }
+  .footer-header-mob {
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* border-bottom: #dac99c 1px solid; */
+    text-align: center;
+  }
+  
+  .footer-statement {  
+    /* font-size: 12px; */
+  }
+  @media only screen and (max-width: 600px) {
+    .footer p,
+    .footer h5,
+    .footer a {
+      color: #444444;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    .footer-statement {
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 1212px) {
+    .footer {
+      height: fit-content;
+      padding-bottom: 100px;
+    }
+    .footer-statement {
+      text-align: center;
+    }
+  }
+  
